@@ -2,362 +2,362 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>http://docs.welsim.com/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/features/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/glossary/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/license/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/misc/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/support/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/beamsection/beamsection_getstart/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/beamsection/beamsection_overview/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/curvefitter/curvefit_getstart/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/curvefitter/curvefit_io/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/curvefitter/curvefit_overview/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/curvefitter/curvefit_theory/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/install/licensing/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/install/linux/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/install/windows/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/legal/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/legal/LGPL/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/legal/contact/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/legal/trademarks/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/mateditor/mat_core_loss/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/mateditor/mat_file_format/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/mateditor/mat_gui/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/mateditor/mat_hyperelasticity_curvefit/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/mateditor/mat_mutually_exclusive/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/mateditor/mat_properties/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/mateditor/mat_table_data/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/mateditor/mat_workflow/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/mateditor/mateditor_overview/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/mateditor/material_data/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/unitconverter/unitconverter/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/release_notes/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/troubleshooting/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/get_started/quick_start/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/get_started/electromagnetics/electrostatic/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/get_started/structural/structural_modal/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/get_started/structural/structural_static/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/get_started/structural/structural_transient/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/get_started/thermal/thermal_ss/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/get_started/thermal/thermal_transient/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/material/mat_file_format/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/material/mat_gui/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/material/mat_mutually_exclusive/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/material/mat_overview/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/material/mat_properties/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/material/mat_workflow/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/mesh/mesh_usage/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/mesh/meshing/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/theory/contact/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/theory/electromagnetic/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/theory/elements/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/theory/geometricnl/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/theory/introduction/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/theory/materialnl/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/theory/modal/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/theory/shapefunction/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/theory/structures/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/theory/thermal/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/theory/transient/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/users/analysistypes/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/users/bcs/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/users/connections/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/users/geometry/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/users/gui/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/users/objects/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/users/overview/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/users/results/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/users/steps/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/users/study/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/vm/electromagnetic/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/vm/introduction/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/vm/structural/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.welsim.com/welsim/vm/thermal/</loc>
-         <lastmod>2022-08-12</lastmod>
+         <lastmod>2022-08-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
