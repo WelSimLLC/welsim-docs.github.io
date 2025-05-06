@@ -1,0 +1,63 @@
+=== gray color on the background of words ===
+<!-- * `mkdocs new [dir-name]` - Create a new project.
+* `mkdocs serve` - Start the live-reloading docs server.
+* `mkdocs build` - Build the documentation site.
+* `mkdocs help` - Print this help message. -->
+
+
+
+=== field of words on gray color and can be copied ===
+    mkdocs.yml    # The configuration file.
+    docs/
+        index.md  # The documentation homepage.
+        ...       # Other markdown pages, images and other files.
+        
+=== Warning box===
+!!! warning "Managed stacks are more functional"
+    Stacks provided by Wodby (including forks) may have additional configurations not covered by templates.
+    
+    
+
+=== table and internal superlink ===
+| Name | Description | Mandatory | Schema | 
+| ---- | ----------- | -------- | ------ |
+| image | The image the container is running. | ? | string |
+| entrypoint | Entrypoint string or array. The docker image’s ENTRYPOINT is used if this is not provided. |  | string, string array |
+| command | Arguments to the entrypoint. The docker image’s CMD is used if this is not provided. |  | string, string array |
+| working_dir | Container’s working directory. If not specified, the container runtime’s default will be used, which might be configured in the container image. |  | string |
+| environment | List of environment variables to set in the container. |  | string array |
+| volumes | Volumes to mount into the container’s filesystem. |  | string array |
+| [memory](#memory) | Memory rules and limitations |  | int, string | 
+| [cpu](#cpu) | CPU resources rules and limitations |  | int, string |
+| [ports](#ports) | List of ports to expose from the container. |  | string array |
+| [check_ready](#check-ready) | Describes a health check to be performed against a container to determine whether it is alive or ready to receive traffic. |  | string array |
+| [deployment](#deployment) | Deployment enables declarative updates for services. |  | string array |
+| [security_context](#securitycontext) | Security context holds security configuration that will be applied to a container. |  | string array |
+
+
+
+=== code === 
+```
+128 - Request 128Mb of memory.
+512:1024 - Request 512Mb of memory. Limit 1Gb of memory.
+```
+
+
+=== bold font ===
+**Always use `recreate` strategy for stateful services like database and search engines.**
+
+
+=== use Font awosome ===
+Regular
+
+### <i class="fas fa-puzzle-piece" aria-hidden="true"></i> Puzzle Icon
+{: #puzzle}
+And you can go further, such as the following.
+
+Styled
+
+### <i class="fab fa-gitlab fa-fw" style="color:rgb(107,79,187); font-size:.85em" aria-hidden="true"></i> Purple GitLab Tanuki
+{: #tanuki-purple}
+
+### <i class="fab fa-gitlab fa-fw" style="color:rgb(252,109,38); font-size:.85em" aria-hidden="true"></i> Orange GitLab Tanuki
+{: #tanuki-orange}

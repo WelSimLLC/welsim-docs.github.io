@@ -1,0 +1,264 @@
+# Project information
+site_name: WelSim Documentation
+site_author: WelSimulation LLC
+site_url: http://docs.welsim.com
+#site_dir: D:\WelSimLLC\WelSimDotCom\welsim-nginx\docs
+site_description: WELSIM, MatEditor, CurveFitter, BeamSection and UnitConverter online user manual
+site_dir: ../welsim-docs-gh-pages
+
+
+# Repository
+repo_name: WelSim/docs
+repo_url: https://github.com/WelSimLLC/welsim-docs.github.io
+
+
+# Copyright
+copyright: Copyright &copy; 2017 - 2025 <a href="https://welsim.com">WelSimulation LLC</a> 
+
+
+# Configuration
+theme:
+  name: material
+  custom_dir: 'theme'
+  favicon: 'assets/favicon.ico'
+  logo: 'assets/images/welsim_icon.png'
+  icon:
+    logo: logo
+  language: en
+  palette:
+    scheme: default
+    primary: 'indigo'
+    accent: 'orange'
+    toggle:
+      icon: material/toggle-switch
+      name: Switch to light mode
+    # scheme: slate
+    # primary: blue
+    # accent: blue
+    # toggle:
+    #   icon: material/toggle-switch-off-outline
+    #   name: Switch to dark mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    # - navigation.instant # this is bad for Latex
+    # - header.autohide
+    # - toc.autohide
+  static_templates:
+    - 404.html
+  include_search_page: false
+  include_sidebar: false
+  search_index_only: true
+
+
+# Plugins
+plugins:
+  - search:
+      separator: '[\s\-\.]+'
+      lang:
+        - en
+  - minify:
+      minify_html: true
+  - autorefs
+  # - mkpdfs:
+  #   company: WelSimulation LLC
+  #   author: WelSim
+  # - with-pdf:
+      # author: WelSimulation LLC
+
+
+
+# Customization
+extra:
+  manifest: 'manifest.webmanifest'
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://welsim.com
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UCoBcsm1OwSinQCnyFiXLDog
+    - icon: fontawesome/brands/medium
+      link: https://medium.com/@getwelsim
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/welsim
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/getWELSIM
+  disqus: 'welsim'
+
+
+# Extensions
+markdown_extensions:
+- admonition
+- abbr
+- attr_list
+- def_list
+- footnotes
+- meta
+- toc:
+    permalink: true
+- codehilite:
+    guess_lang: false
+    linenums: false
+- pymdownx.arithmatex:
+    generic: true
+- pymdownx.betterem:
+    smart_enable: all
+- pymdownx.caret
+- pymdownx.critic
+- pymdownx.details
+# - pymdownx.emoji:
+#     emoji_index: !!python/name:materialx.emoji.twemoji
+#     emoji_generator: !!python/name:materialx.emoji.to_svg
+- pymdownx.highlight
+- pymdownx.inlinehilite
+- pymdownx.keys
+- pymdownx.magiclink:
+    repo_url_shorthand: true
+    user: welsim
+    repo: welsim
+- pymdownx.mark
+- pymdownx.smartsymbols
+- pymdownx.snippets:
+    check_paths: true
+- pymdownx.superfences:
+   custom_fences:
+    - name: math
+      class: arithmatex
+      format: !!python/name:pymdownx.arithmatex.fence_mathjax_format
+- pymdownx.tabbed
+- pymdownx.tasklist:
+    custom_checkbox: true
+- pymdownx.tilde
+- attr_list
+
+# Page tree
+nav:
+  - Home: index.md
+  - Features: features.md
+
+  - Installation:
+    - WelSim licensing guide: install/licensing.md
+    - Linux installation guide: install/linux.md
+    - Windows installation guide: install/windows.md
+
+    
+  - WELSIM:
+    - Getting started:
+      - Quick start: welsim/get_started/quick_start.md
+      - Structural analysis:
+        - Static structural analysis:  welsim/get_started/structural/structural_static.md
+        - Transient structural analysis:  welsim/get_started/structural/structural_transient.md
+        - Modal analysis:  welsim/get_started/structural/structural_modal.md
+      - Thermal analysis:
+        - Steady-state thermal analysis:  welsim/get_started/thermal/thermal_ss.md
+        - Transient thermal analysis:  welsim/get_started/thermal/thermal_transient.md
+      - Electromagnetics analysis:
+        - Electro-static analysis:  welsim/get_started/electromagnetics/electrostatic.md
+
+    - Material user's guide:
+      - Overview: welsim/material/mat_overview.md
+
+    - WELSIM user's guide:
+      - Overview: welsim/users/overview.md
+      - Application user interface: welsim/users/gui.md
+      - Steps for using the application: welsim/users/steps.md
+      - Physics and analysis types: welsim/users/analysistypes.md
+      - Specifying geometry: welsim/users/geometry.md
+      - Setting connections: welsim/users/connections.md
+      - Configuring study settings: welsim/users/study.md
+      - Setting up boundary conditions: welsim/users/bcs.md
+      - Using results: welsim/users/results.md
+      - Objects reference: welsim/users/objects.md
+
+  # - Meshing user's guide: 
+  #   - Overview: welsim/mesh/meshing.md
+
+    - Theory reference:
+      - Introduction: welsim/theory/introduction.md
+      - Structures: welsim/theory/structures.md
+      - Structures with geometric nonlinearity: welsim/theory/geometricnl.md
+      - Structures with material nonlinearities: welsim/theory/materialnl.md
+      - Structures with contact: welsim/theory/contact.md
+      - Structures with transient analysis: welsim/theory/transient.md
+      - Modal analysis (eiginvalue): welsim/theory/modal.md
+      - Thermal analysis: welsim/theory/thermal.md
+      - Electromagnetic analysis: welsim/theory/electromagnetic.md
+      - Shape functions: welsim/theory/shapefunction.md
+      - Element library: welsim/theory/elements.md
+
+    - Verification manual:
+      - Introduction: welsim/vm/introduction.md
+      - Structural: welsim/vm/structural.md
+      - Thermal: welsim/vm/thermal.md
+      - Electromagnetic: welsim/vm/electromagnetic.md
+
+    - Troubleshooting:  welsim/troubleshooting.md
+  
+
+  - MatEditor:
+    - Overview: mateditor/mateditor_overview.md
+    - Basics of MatEditor: 
+      - Graphical user interface: mateditor/mat_gui.md
+      - Workflow: mateditor/mat_workflow.md
+    - Material Data: 
+      - Libraries and properties: mateditor/mat_properties.md
+      - Mutually exclusive properties: mateditor/mat_mutually_exclusive.md
+      - Curve fitting: mateditor/mat_hyperelasticity_curvefit.md
+      - Core loss model: mateditor/mat_core_loss.md
+    - Data I/O:
+      - Material file format: mateditor/mat_file_format.md
+      - Import/Export tabular data: mateditor/mat_table_data.md
+      - FrontISTR format: mateditor/mat_io_frontistr.md
+      - OpenRadioss format: mateditor/mat_io_openradioss.md
+    - Theory: 
+      - Hyper-elasticity: mateditor/mat_theory_hyper-elasticity.md
+      - Plasticity: mateditor/mat_theory_plasticity.md
+      - Failure models: mateditor/mat_theory_failure.md
+      - Equations of state (EOS): mateditor/mat_theory_eos.md
+
+
+
+  - CurveFitter:
+    - Overview: curvefitter/curvefit_overview.md
+    - Getting Started: curvefitter/curvefit_getstart.md
+    - Theory: curvefitter/curvefit_theory.md
+    - I/O File Format: curvefitter/curvefit_io.md
+
+  - UnitConverter:
+    - Overview: unitconverter/unitconverter.md
+
+  - BeamSection:
+    - Overview: beamsection/beamsection_overview.md
+
+  # - Legal notices:
+  #   - Legal notice: legal/index.md
+  #   - WelSimulation LLC contact information: legal/contact.md
+  #   - WELSIM trademark: legal/trademarks.md
+  #   - GNU Lesser General Public License (LGPL): legal/LGPL.md
+
+  - Release notes: welsim/release_notes.md
+  # - License: license.md
+  - Glossary: glossary.md
+  # - Support: support.md
+
+
+# Google Analytics
+# google_analytics:
+#   - ["UA-90183333-1"]
+#   - 'auto'
+
+
+   
+extra_css:
+- 'assets/css/custom.css'
+- 'assets/css/simpleLightbox.min.css'
+- 'assets/css/wodby.css'
+- https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css
+
+extra_javascript:
+- 'assets/js/mathjax-config.js'
+- https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+- https://polyfill.io/v3/polyfill.min.js?features=es6
+- https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+- https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js
