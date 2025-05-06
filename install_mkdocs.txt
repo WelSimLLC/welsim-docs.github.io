@@ -1,0 +1,3 @@
+pip install mkdocs pymdown-extensions mkdocs-material mkdocs-minify-plugin mkdocs-autorefs
+
+

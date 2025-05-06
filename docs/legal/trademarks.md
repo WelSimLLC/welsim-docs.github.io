@@ -1,0 +1,3 @@
+# WELSIM Trademarks List
+
+* WELSIM®
