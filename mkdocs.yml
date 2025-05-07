@@ -2,9 +2,8 @@
 site_name: WelSim Documentation
 site_author: WelSimulation LLC
 site_url: http://docs.welsim.com
-#site_dir: D:\WelSimLLC\WelSimDotCom\welsim-nginx\docs
 site_description: WELSIM, MatEditor, CurveFitter, BeamSection and UnitConverter online user manual
-site_dir: ../welsim-docs-gh-pages
+#site_dir: ../welsim-docs-gh-pages
 
 
 # Repository
@@ -83,7 +82,7 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/welsim
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/getWELSIM
+      link: https://x.com/getWELSIM
   disqus: 'welsim'
 
 
