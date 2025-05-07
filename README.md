@@ -8,3 +8,5 @@ The usage is as follows:
 
 
 If you have any comments or questions, please feel free to submit a ticket at the Issues/Discussions section, or email us at info@welsim.com.
+
+![welsim docs](misc/docs_screen.png)
