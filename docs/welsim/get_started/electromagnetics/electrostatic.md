@@ -1,14 +1,14 @@
 # Electrostatic analysis
-This example shows you how to conduct a 3D electrostatic analysis for a unibody part. 
+This example shows you how to conduct a 3D electrostatic analysis for a unibody part. Electromagnetics analysis uses *Palace* as the default solver. The content will be added in the future. 
 
-## Specifying analysis 
+<!-- ## Specifying analysis 
 In the Properties View of the FEM Project object, you set the Physics Type property to Electromagnetic and Analysis Type to Electrostatic. An Electro-Static analysis is defined as shown in Figure below.
 
 ![finite_element_analysis_welsim_ex6_analysis_type](../../../img/3_guide/ch2_start_ex6_analysis_type.png "Defining an Electrostatic analysis at the Properties View of FEM Project object.")
 
 
 ## Preparing geometry
-Next, you can import the geometry file “**h_section_unibody.step**” by clicking the Import... command from the **Toolbar** or **Geometry** Menu. The imported geometry and material property are shown in Figure below.
+Next, you can import the geometry file “*h_section_unibody.step*” by clicking the Import... command from the **Toolbar** or **Geometry** Menu. The imported geometry and material property are shown in Figure below.
 
 ![finite_element_analysis_welsim_ex6_geom_mat](../../../img/3_guide/ch2_start_ex6_geom_mat.png "Import a geometry and assign Aluminum material to the sole part.")
 
@@ -41,9 +41,5 @@ To evaluate the deformation of the structure, you can add a **Voltage** object t
 
 Adding an electric field result object is similar. Clicking the **Electric Field** result from **Toolbar** or **Electromagnetic Menu**, you insert a **Electric Field** result object to the tree. Evaluating the default **Total Electric Field** Type, you obtain the magnitude of the electric field vector contour on the body in the **Graphics** window. The **Maximum** and **Minimum** values of field data are displayed in the Properties View window as shown in Figure below.
 
-![finite_element_analysis_welsim_ex6_rst_voltage](../../../img/3_guide/ch2_start_ex6_rst_voltage.png "Evaluating and displaying the total Electric Field result of the part subjected to the given conditions.")
-
-!!! info
-    This project file is located at examples/quick_electrostatic_01.wsdb.
-
+![finite_element_analysis_welsim_ex6_rst_voltage](../../../img/3_guide/ch2_start_ex6_rst_voltage.png "Evaluating and displaying the total Electric Field result of the part subjected to the given conditions.") -->
 

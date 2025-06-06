@@ -11,6 +11,7 @@ WELSIM was born out of a vision to create a general-purpose simulation utility t
 * [x] No wait. You can [download][1] and use WELSIM immediately.
 * [x] The secure software program and no collection of your data. No need for an internet connection to run the program.
 * [x] The ease-of-use graphical interface requires no learning curve.
+* [x] Support multiple well-known open source solvers, including [CalculiX](https://calculix.de), [Elmer FEM](https://elmerfem.org), [FrontISTR](https://frontistr.com), [LAMMPS](https://lammps.org), [MFEM](https://mfem.org), [OpenRadioss](https://openradioss.org), [Palace](https://awslabs.github.io/palace), and [SU2](https://su2code.github.io).
 * [x] Friendly [pricing][2] options. Free trial. No hidden fees. No commitments.
 
 
@@ -46,4 +47,4 @@ If you are interested in our free engineering software:
 [11]: beamsection/beamsection_overview.md
 
 
-<small>Last Updated: May 22th, 2025</small>
+<small>Last Updated: June 1st, 2025</small>

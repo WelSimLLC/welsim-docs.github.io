@@ -17,52 +17,63 @@ The WELSIM application provides you an ease-of-use graphical interface to custom
 
 An overview of graphical user interface is shown in [Figure](../../img/3_guide/ch2_start_gui_overall.png) below.
 
-![finite_element_analysis_welsim_gui_overall](../../img/3_guide/ch2_start_gui_overall.png "An overview of WELSIM graphical user interface.").
+![finite_element_analysis_welsim_gui_overall](../../img/3_guide/ch2_start_gui_overall.png "An overview of WELSIM graphical user interface.")
 
 ### Menu and toolbar
 Menus and toolbar contain primary commands of the application as shown in Figure below. Sections [Main Menus](../users/gui.md#main-menus) and [Toolbars](../users/gui.md#toolbars) of have more details. 
 
-![finite_element_analysis_welsim_gui_toolbar](../../img/3_guide/ch2_start_gui_toolbar.png "Menus and Toolbar in the graphical user interface.").
+![finite_element_analysis_welsim_gui_toolbar](../../img/3_guide/ch2_start_gui_toolbar.png "Menus and Toolbar in the graphical user interface.")
 
 ### Graphics window
 The Graphics window displays the geometries and associated symbols, text, and annotations. In this window, you can pan, rotate, and zoom the 3D geometries using mouse and key. In addition to the geometries, this window may contain annotation,  [Graphics Toolbar](../users/gui.md#graphics-toolbar), coordinate system symbol, ruler, logo, etc. A schematic view of the Graphics window is shown in Figure below.
 
-![finite_element_analysis_welsim_gui_graphics](../../img/3_guide/ch2_start_gui_graphics.png "Graphics window in the graphical user interface").
+![finite_element_analysis_welsim_gui_graphics](../../img/3_guide/ch2_start_gui_graphics.png "Graphics window in the graphical user interface")
+
+### Unit definition
+The Perferences window lists the available units for users to choose. It is usually the first step to start the simulation.
+![finite_element_analysis_welsim_gui_preferences_units](../../img/3_guide/quick_preferences_units.png "Unit definition in the graphical user interface")
+
+The bottom right of the main window shows the current units in use.
+![finite_element_analysis_welsim_gui_units_display](../../img/3_guide/quick_main_windows_corner_units.png "Unit used in the graphical user interface")
+
 
 ### Material definition spreadsheet
 The material module provides a spreadsheet panel for you to define and review material properties. An overview of the material property spreadsheet is shown in Figure below.
-
-![finite_element_analysis_welsim_gui_material](../../img/3_guide/ch2_start_gui_mat.png "Material definition spreadsheet in the graphical user interface").
+![finite_element_analysis_welsim_gui_material](../../img/3_guide/ch2_start_gui_mat.png "Material definition spreadsheet in the graphical user interface")
 
 ### Geometry display
 The Graphics window displays the 3D geometries, meshed elements, result contours, etc. A 3D geometry and object properties are shown in Figure below.
 
-![finite_element_analysis_welsim_gui_gemoetry](../../img/3_guide/ch2_start_gui_geometry.png "Graphics window in the graphical user interface").
+![finite_element_analysis_welsim_gui_gemoetry](../../img/3_guide/ch2_start_gui_geometry.png "Graphics window in the graphical user interface")
 
 ### Mesh display
 Graphics window displays the mesh as you select the mesh related objects in the tree. The Properties View shows the statistical data of the mesh as shown in Figure below.
 
-![finite_element_analysis_welsim_gui_mesh](../../img/3_guide/ch2_start_gui_mesh.png "Graphics window displays the meshed geometries and mesh data.").
+![finite_element_analysis_welsim_gui_mesh](../../img/3_guide/ch2_start_gui_mesh.png "Graphics window displays the meshed geometries and mesh data.")
 
 ### Boundary condition display
 For the boundary conditions, the Graphics window displays the highlighted entities (faces, edges, vertices), the Property View, Tabular Data, and Chart windows show the boundary values over time. The Properties View window also allows you to scope the geometry entities and set values, as shown in Figure below.
 
-![finite_element_analysis_welsim_gui_bc](../../img/3_guide/ch2_start_gui_bc.png "WELSIM graphical user interface shows boundary conditions in Properties View, Graphics, Tabular Data, and Chart windows.").
+![finite_element_analysis_welsim_gui_bc](../../img/3_guide/ch2_start_gui_bc.png "WELSIM graphical user interface shows boundary conditions in Properties View, Graphics, Tabular Data, and Chart windows.")
 
 ### Solution display
 After solving, the user interface displays the solution and results. The Graphics window displays the result contour and legend. The Properties View shows the Maximum and Minimum values of the result at the given Set Number. The Tabular Data and Chart Windows illustrate the maximum and minimum values over the time as shown in Figure  below.
 
-![finite_element_analysis_welsim_gui_result](../../img/3_guide/ch2_start_gui_result.png "WELSIM graphical user interface shows result contour on Graphics window, and related data on the Properties View, Tabular Data, and Chart windows.").
+![finite_element_analysis_welsim_gui_result](../../img/3_guide/ch2_start_gui_result.png "WELSIM graphical user interface shows result contour on Graphics window, and related data on the Properties View, Tabular Data, and Chart windows.")
 
 ### Result legend
 You can adjust the result contour and legend by right clicking on the legend field and set the parameters in the context menu, as shown in Figure below.
 
-![finite_element_analysis_welsim_gui_result_legend](../../img/3_guide/ch2_start_gui_result_legend.png "The result legend in Graphics window supports the right click to adjust display details.").
+![finite_element_analysis_welsim_gui_result_legend](../../img/3_guide/ch2_start_gui_result_legend.png "The result legend in Graphics window supports the right click to adjust display details.")
 
 ## Workflow
 Using WELSIM is straightforward. The following gives you the primary workflow steps in starting a finite element analysis project from scratch:
 
-### Create a new project
+### Choosing unit
+In the preferences, select an appropriate unit system for the entire simulation. The currently selected unit will be displayed in the lower right corner of the main window.
+
+
+### Creating a new project
 Clicking **New** command from **Toolbar** or **File Menu** creates a new simulation project. Several default objects are automatically generated in the tree, and the Graphics window is filled with the 3D modeling interface. The following shows the behaviors of creating a new project:
 
 * A **Material Project** and a **FEM Project** are created simultaneously. The **Material Project** object holds only **Material objects**, and the **FEM Project** object contains all modeling objects that allow users to customize a finite element analysis. Only one **Material Project** is allowed in the tree, while you can add multiple **FEM Projects** to conduct multiple simulation studies at one interface. 
@@ -109,6 +120,7 @@ You can define the analysis settings in the following order:
 * Set the **Physics Type** and **Analysis Type** in the **FEM Project** object. 
 * Determine the **Number of Steps**, **Current Step**, and **Current End Time** properties in **Study** object.
 * Determine the analysis settings properties in **Study Settings** object.
+* * Choose the solver, such as CalculiX, Elmer FEM, FrontISTR, LAMMPS, MFEM, OpenRadioss, Palace, SU2[^1]. Keep the Program Controlled allows the program chooses the default solver. 
 * Determine the solver settings properties in the **Answers** object.
 
 ### Imposing initial conditions
@@ -150,6 +162,7 @@ The analysis is completed. You can **Save** the projects to an external “wsdb�
     The **\*.wsdb**  file and associated folder are the WELSIM database for project data persistence, you can open this project file later, on another computer, and on different operation systems.
 
 
+[^1]: WELSIM is not affilicated with these open source solvers including CalculiX, Elmer FEM, FrontISTR, LAMMPS, MFEM, OpenRadioss, Palace, and SU2. 
 
 
 

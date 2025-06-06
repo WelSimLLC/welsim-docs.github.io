@@ -44,16 +44,16 @@ You can install WELSIM as root, or non-root; however, if you are root user, you 
 To download the installation files from our website, you will need to agree the US Export Restrictions. You only need to download one installer file.
 
 1. From the website[^1], select the Linux version of WELSIM and click the download button on the webpage.
-2. The downloaded installer file has the name like: **WelSim%version%SetupUbuntu.run**. For example, the installer of 2024R1 is WelSim28SetupUbuntu.run.
+2. The downloaded installer file has the name like: **WelSim%version%SetupUbuntu.run**. For example, the installer of 2025R2 is WelSim31SetupUbuntu.run.
 3. Begin the product installation as described in the next section.
 
 ### Production installation
 
-1.Navigate to the directory where you placed the installer file. Run the commands below in a terminal window. Note that we take the version of 2024R1 as an example, if you are installing a different version, replace the installer name in the command line below. 
+1.Navigate to the directory where you placed the installer file. Run the commands below in a terminal window. Note that we take the version of 2025R2 as an example, if you are installing a different version, replace the installer name in the command line below. 
 
 ```
-$ chmod +x WelSim28SetupUbuntu.run
-$ ./WelSim28SetupUbuntu.run
+$ chmod +x WelSim31SetupUbuntu.run
+$ ./WelSim31SetupUbuntu.run
 ```
 
 !!! note

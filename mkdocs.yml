@@ -42,6 +42,7 @@ theme:
     code: Roboto Mono
   features:
     - navigation.tabs
+    - content.footnote.tooltips
     # - navigation.instant # this is bad for Latex
     # - header.autohide
     # - toc.autohide
@@ -141,7 +142,6 @@ nav:
     - Linux installation guide: install/linux.md
     - Windows installation guide: install/windows.md
 
-    
   - WELSIM:
     - Getting started:
       - Quick start: welsim/get_started/quick_start.md
@@ -154,7 +154,13 @@ nav:
         - Transient thermal analysis:  welsim/get_started/thermal/thermal_transient.md
       - Electromagnetics analysis:
         - Electro-static analysis:  welsim/get_started/electromagnetics/electrostatic.md
-
+      - CFD analysis:
+        - 2D CFD analysis:  welsim/get_started/cfd/cfd2d.md
+        - 3D CFD analysis:  welsim/get_started/cfd/cfd3d.md        
+      - Molecular dynamics analysis:
+        - Molecular dynamics analysis:  welsim/get_started/md/md_lammps.md        
+        
+        
     - Material user's guide:
       - Overview: welsim/material/mat_overview.md
 
@@ -173,6 +179,11 @@ nav:
   # - Meshing user's guide: 
   #   - Overview: welsim/mesh/meshing.md
 
+    - Regression tests: 
+      - Overview: welsim/regression/regression_overview.md
+      - GUI: welsim/regression/regression_gui.md
+  
+  
     - Theory reference:
       - Introduction: welsim/theory/introduction.md
       - Structures: welsim/theory/structures.md
@@ -215,8 +226,7 @@ nav:
       - Plasticity: mateditor/mat_theory_plasticity.md
       - Failure models: mateditor/mat_theory_failure.md
       - Equations of state (EOS): mateditor/mat_theory_eos.md
-
-
+      
 
   - CurveFitter:
     - Overview: curvefitter/curvefit_overview.md
@@ -224,11 +234,14 @@ nav:
     - Theory: curvefitter/curvefit_theory.md
     - I/O File Format: curvefitter/curvefit_io.md
 
+
   - UnitConverter:
     - Overview: unitconverter/unitconverter.md
 
+
   - BeamSection:
     - Overview: beamsection/beamsection_overview.md
+
 
   # - Legal notices:
   #   - Legal notice: legal/index.md
