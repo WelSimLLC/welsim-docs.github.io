@@ -182,7 +182,7 @@ nav:
     - Regression tests: 
       - Overview: welsim/regression/regression_overview.md
       - GUI: welsim/regression/regression_gui.md
-  
+      - Create tests: welsim/regression/regression_create_test.md
   
     - Theory reference:
       - Introduction: welsim/theory/introduction.md
