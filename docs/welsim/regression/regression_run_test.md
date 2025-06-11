@@ -1,4 +1,4 @@
-# Introduction to the Regression Testing System
+# Run the regression tests
 
 This section describes the regression system in details. To run the regression tests, click the **Play test** commands from the Menu or Toolbar. The Toolbar and Menu of regression test are shown below.
 
