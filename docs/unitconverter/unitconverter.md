@@ -38,66 +38,12 @@ The supported units are listed in the table below.
 | Category | Materials |
 | -------- | --------- |
 | Base | Angle, Current, Length, Mass, Temperature, Time |
-| Common | Area, Density, Energy, Frequency, Volume |
-| Mechanical | Acceleration, Angular Acceleration, Angular Velocity, Force, Moment of Inertia, Power, Pressure, Torque, Velocity |
-| Thermal | Heat Flux Density, Heat Transfer Coefficient, Specific Heat Capacity, Thermal Conductivity, Thermal Expansivity |
-| Electrical | Capacitance, Electric Charge, Electrical Conductance, Electrical Conductivity, Inductance, Surface Charge Density, Surface Current Density, Voltage, Volume Charge Density |
-| Magnetic | Magnetic field strength, Magnetic flux density |
-
-
-
-
-<!-- 
-## Base and comment units
-
-* [x] Angle
-* [x] Current
-* [x] Length
-* [x] Mass
-* [x] Temperature
-* [x] Time
-* [x] Area
-* [x] Density
-* [x] Energy
-* [x] Frequency
-* [x] Volume
-
-## Mechanical units
-
-* [x] Acceleration
-* [x] Angular Acceleration
-* [x] Angular Velocity
-* [x] Force
-* [x] Moment of Inertia
-* [x] Power
-* [x] Pressure
-* [x] Torque
-* [x] Velocity
-
-## Thermal units
-
-* [x] Heat Flux Density
-* [x] Heat Transfer Coefficient
-* [x] Specific Heat Capacity
-* [x] Thermal Conductivity
-* [x] Thermal Expansivity
-
-## Electrical units
-
-* [x] Capacitance 
-* [x] Electric Charge
-* [x] Electrical Conductance
-* [x] Electrical Conductivity
-* [x] Inductance
-* [x] Surface Charge Density
-* [x] Surface Current Density
-* [x] Voltage
-* [x] Volume Charge Density
-
-## Magnetic units
-
-* [x] Magnetic field strength 
-* [x] Magnetic flux density -->
+| Common | Area, Density, Density By Area, Specific Volume, Energy, Energy Density By Area, Energy Density By Volume, Frequency, Volume |
+| Mechanical | Acceleration, Angular Acceleration, Angular Velocity, Force, Moment of Inertia, Power, Pressure, Torque, Velocity, Mass Flow, Momentum, Stiffness, Fracture Toughness, Gravitational Constant |
+| Thermal | Heat Flux Density, Heat Transfer Coefficient, Thermal Conductivity, Thermal Expansivity, Heat Flow, Heat Generation, Heat Capacity, Thermal Radiation Coefficient, Specific Heat Cp, Specific Heat Cv, Specific Heat Rho0Cp, Enthalpy |
+| Electrical | Capacitance, Charge Density, Electric Charge, Electrical Conductance, Electrical Conductivity, Inductance, Surface Charge Density, Surface Current Density, Voltage, Volume Charge Density, Electrical Permittivity, Electric Field, Electric Flux Density |
+| Magnetic | Magnetic Field Strength, Magnetic Flux Density, Magnetic Permeability, Magnetic Potential |
+| Fluid | Dynamic Viscosity, Kinematic Viscosity |
 
 
 ## Download

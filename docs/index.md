@@ -47,4 +47,4 @@ If you are interested in our free engineering software:
 [11]: beamsection/beamsection_overview.md
 
 
-<small>Last Updated: June 7th, 2025</small>
+<small>Last Updated: June 12th, 2025</small>
