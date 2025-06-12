@@ -23,12 +23,14 @@ WELSIM also provide predefined materials, which covers most of commonly used mat
 
 | Category | Materials |
 | -------- | --------- |
-| General Materials | Structural Steel, Stainless Steel, Aluminum Alloy, Concrete, Copper Alloy, Gray Cast Iron, Titanium Alloy|
+| General Materials | Structural Steel, Stainless Steel, Aluminum Alloy, Concrete, Copper Alloy, Gray Cast Iron, Titanium Alloy |
 | Nonlinear Materials | Aluminum Alloy NL, Concrete NL, Copper Alloy NL, Stainless Steel NL, Structural Steel NL, Titanium Alloy NL |
 | Hyperelastic Materials | Elastomer Mooney-Rivlin, Elastomer Neo-Hookean, Elastomer Ogden, Elastomer Yeoh, Neoprene Rubber |
 | Thermal Materials | Brass, Bronze, Copper, Diamond, Ferrite, Nodular Cast Iron, Solder, Teflon, Tungsten, Wood |
-| Electromagnetic Materials | SS416, Supermendure |
-| Other Materials | Water Liquid, Argon, Ash |
+| Electromagnetic Materials | SS416, Supermendure, Sapphire, TDK K1, TDK M33, TDK N30, TDK N41, TDK N45, TDK N48, TDK N49, TDK N87, TDK N97, TDK PC200, TDK T38, TDK T66 |
+| Core Loss Materials | Electrical Steel NGO(AK Stel's M19), Electrical Steel GO (ATI's M6), Cobalt Steel (Carpenter's 50A), Metglas 2605SA1, Nickel Steel (Carpenter's 49 NGO), Low Carbon Steel (Mild Steel), Iron Powder Core (Micrometal's 30 Material), Alloy Powder Core (Magnetic's KoolMu 40mu), Ferrite (Magnetics' P Material)| 
+| Fluid Materials | Water Liquid, Water Vapor, Argon, Argon Liquid, Ash, Air |
+| Atoms | H, He, LI, Be, B, C, N, O, F, Ne, Na |
 
 
 ## Material properties
@@ -36,16 +38,18 @@ The supported material properties are listed in the table below.
 
 | Category | Materials |
 | -------- | --------- |
-| Basic | Density, Isotropic Thermal Expansion, Isotropic Instantaneous Thermal Expansion, Orthotropic Thermal Expansion, Orthotropic Instantaneous Thermal Expansion, Constant Damping Coefficient |
+| Basic | Density, Isotropic Thermal Expansion, Isotropic Instantaneous Thermal Expansion, Orthotropic Thermal Expansion, Orthotropic Instantaneous Thermal Expansion, Constant Damping Coefficient, Local Coordinates, Mass  |
 | Linear Elastic | Isotropic Elasticity, Orthotropic Elasticity, Viscoelastic |
-| Hyperelastic Test Data | Uniaxial Test Data, Biaxial Test Data, Shear Test Data, Volumetric Test Data, SimpleShear Test Data, Uniaxial Tension Test Data, Uniaxial Compression Test Data |
-| Hyperelastic | Arruda-Boyce, Blatz-Ko, Gent, Mooney-Rivlin 2, Mooney-Rivlin 3, Mooney-Rivlin 5, Mooney-Rivlin 9, Neo-Hookean, Ogden 1st Order, Ogden 2nd Order, Ogden 3rd Order, Polynomial 1st Order, Polynomial 2nd Order, Polynomial 3rd Order, Yeoh 1st Order, Yeoh 2nd Order, Yeoh 3rd Order |
-| Plasticity | Bilinear Isotropic Hardening, Multilinear Isotropic Hardening, Bilinear Kinematic Hardening, Multilinear Kinematic Hardening, Anand Viscoplasticity |
+| Test Data | Uniaxial Test Data, Biaxial Test Data, Shear Test Data, Volumetric Test Data, SimpleShear Test Data, Uniaxial Tension Test Data, Uniaxial Compression Test Data, Visco Bulk Test Data, Visco Hear Test Data, P-B Test Data|
+| Hyperelastic | Arruda-Boyce, Blatz-Ko, Gent, Mooney-Rivlin 2/3/5/9, Neo-Hookean, Ogden 1st/2nd/3rd Order, Polynomial 1st/2nd/3rd Order, Yeoh 1st/2nd/3rd Order |
+| Plasticity | Bilinear Isotropic Hardening, Multilinear Isotropic Hardening, Bilinear Kinematic Hardening, Multilinear Kinematic Hardening, Anand Viscoplasticity, Barlat3, Barlat2000, Concreate Model, Cowper-Symonds Strength, Deshpande-Fleck Model, Gary Model, Gurson Model, Hensel-Spittel Yield, Hill Anisotropic MCC, Hill Orthotropic, Hill Orthotropic Thermal, HoneyComb, Johnson-Cook Strength, Johnson-Holmquist Strength, Johnson-Voce-Prucker, Paperboard Model, Plastic Elastomer, Ramberg-Osgood Hardening, Rate-Dependent Multilinear Hardening, Steel Phase Transformation, Steinberg-Guinan Strength, Swift Hardening, Swift-Voce Model, Vegter Model, Yoshida-Uemori Strength, Zerilli-Armstrong Strength, Zhao Strength |
 | Creep | Strain Hardening, Time Hardening, Generalized Exponential, Generalized Graham, Generalized Blackburn, Modified Time Hardening, Modified Strain Hardening, Generalized Garofalo, Exponential Form, Norton, Combined Time Hardening, Rational Polynomial, Generalized Time Hardening |
-| Visco-elastic | Prony Shear Relaxation, Prony Volumetric Relaxation |
-| Other Mechanical | Strain Life Parameters, Compressive Ultimate Strength, Compressive Yield Strength, LaRc0304 Constants, Orthotropic Strain Limits, Orthotropic Stress Limits, Puck Constants, Tensile Ultimate Strength, Tensile Yield Strength, Tsai-Wu Constants, Shape Memory Effect, Drucker-Prager Strength Piecewise, Drucker-Prager Strength Linear, Ideal Gas EOS, Crushable Foam, Nonlinear Elastic Model Damage, Plakin Special Hardening, Tensile Pressure Failure, Crack Softening Failure |
-| Thermal | Enthalpy, Isotropic Thermal Conductivity, Orthotropic Thermal Conductivity, Specific Heat |
-| Electromagnetics | B-H Curve, Isotropic Relative Permeability, Orthotropic Relative Permeability, Isotropic Resistivity, Orthotropic Resistivity |
+| Visco-elastic | Boltzmann, Maxwell-Kelvin, Maxwell-Kelvin-Voigt, Prony Shear Relaxation, Prony Volumetric Relaxation, Tool Narayanaswamy Fictive (Temperature Shift) Function, William-Landel-Ferry Shift Function |
+| Equilibrium of State | EOS Compaction | EOS Gruneisen| EOS Ideal Gas| EOS Ideal Gas VT | EOS Linear | EOS LSZK | EOS Murnaghan | EOS NASG | EOS Noble-Abel | EOS Osborne | EOS Polynomial | EOS Puff | EOS Sesame | EOS StiffGas | EOS Tillotson | 
+| Failure | Crack Softening Failure | Alter Failure | Biquad Failure | Cockcroft Failure | Connect Failure | EMC Failure | Energy Failure | Fabric Failure | FLD Failure | General Damage Failure | Gurson Failure | Hashin Failure | Johnson Failure | Lad Dama Failure | NXT Failure | Puck Failure | Wierzbicki Failure | Wilkins Failure | Plastic Strain Failure | Tensile Pressure Failure |
+| Thermal | Enthalpy, Isotropic Thermal Conductivity, Orthotropic Thermal Conductivity, Specific Heat Cp, Specific Heat Cv, Specific Heat Rho0Cp |
+| Electromagnetics | B-H Curve, Isotropic Relative Permeability, Orthotropic Relative Permeability, Isotropic Resistivity, Orthotropic Resistivity, Isotropic Dielectric Loss Tangent, Isotropic Electrical Conductivity,  Orthotropic Electrical Conductivity, Isotropic MagneticLoss Tangent, Orthotropic Magnetic Loss Tangent， Orthotropic Dielectric Loss Tangent, Isotropic Relative Imaginary Permeability, Isotropic Relative Permittivity, Orthotropic Relative Permeability，Orthotropic Relative Permittivity， Orthotropic Resistivity |
+
 
 
 ## Working with material data
