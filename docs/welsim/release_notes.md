@@ -1,5 +1,5 @@
 # WELSIM release notes
-This release notes are specific to WELSIM 2024R1 and arranged by the version and features.
+This release notes are specific to WELSIM and arranged by the version and features.
 
 ## Upgrading
 To upgrade WELSIM to the latest version, download the installer from our [official website <i class="fa fa-external-link"></i>](https://welsim.com/download).
@@ -7,7 +7,7 @@ To upgrade WELSIM to the latest version, download the installer from our [offici
 <br/>
 ​
 
-Since version 2.1, WelSim provides a version checker in the application, users can click **Help** -> **Check for Updates** on the menu and know if a new version is available. 
+Since 2022R2(version 2.1), WelSim provides a version checker in the application, users can click **Help** -> **Check for Updates** on the menu and know if a new version is available. 
 
 ![finite_element_analysis_welsim_check_updates](../img/19/finite_element_analysis_welsim_check_updates2.png "Check updates.")
 
@@ -20,6 +20,27 @@ To inspect the currently installed version, open the **About** dialog in WELSIM 
 
 
 ## Changelog
+
+### 2025R2 (3.1) <small>May at 2025</small>
+* Enhance support for *OpenRadioss* solver
+    - Support Remote Displacement BC, create a Rigid Body node for the associated boundary.
+    - Expose Solution object property Handle Negative Element to generate /NEGVOL command.
+    - Support thermal stress analysis, ie. /IMPTEMP boundary condition command.
+    - Support Contact Force results.
+* Support multi-layer shell structure GUI, particularly in the tabular data input.
+* Show Log file data as user clicks on the Solution object.
+* Show Set Number and Time columns in the table and chart for the *OpenRadioss* and *SU2* results those are not evaluated yet.
+* Add current project file location on the GUI window title, in addition to the product and version.
+* Drag the files to import STEP files.
+* Open source of the documentation.
+* New features added to MatEditor.
+    - Add Specific Heat Cv and Specific Heat Rho0Cp material properties.
+    - Support LAW23 (PLAS_DAMA), LAW27 (PLAS_BRIT), and LAW28 (HONEYCOMB) material properties for *OpenRadioss*.
+    - Support /THERM_STRESS/MAT and /HEAT/MAT commands for *OpenRadioss*
+    - Add Swift and Ramberg-Osgood plastic material properties.
+* Upgrade CFD solver SU2 to the latest version 8.2.
+* Upgrade MUMPS to 5.7.3.
+* Use Intel MPI for FrontISTR Windows version, instead of MSMPI.
 
 
 ### 2025R1 (3.0) <small>Jan. at 2025</small>

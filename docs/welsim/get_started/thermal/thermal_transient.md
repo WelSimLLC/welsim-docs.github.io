@@ -1,6 +1,10 @@
 # Transient thermal analysis
-This example shows you how to conduct a 3D transient thermal analysis for an assembly. 
+This example shows you how to conduct a 3D transient thermal analysis for an assembly. Transient thermal analysis uses *FrontISTR* as the default solver. It also supports using *CalculiX* or *Elmer FEM* as a solver.
 
+
+### Selecting units
+In the beginning, we select the MKS unit system for the subsequential simulation. Clicking **Preferences** from the **Toolbar** or **Menu**, and setting the **Metric (kg, m, s, A, N, V)**.
+![welsim_preferences_unit_kgms](../../../img/3_guide/welsim_preferences_unit_kgms.png "Selecting MKS unit system from the preferences.")
 
 ## Defining materials
 In this multi-body analysis, we assign **Structural Steel** and **Aluminum** materials to different parts. Since a **Structural Steel** object is already added as you initialize a **FEM Project**, you only need to insert an aluminum material object by clicking **Add Material** from **Toolbar** or **FEM Menu**. 
@@ -8,6 +12,8 @@ In this multi-body analysis, we assign **Structural Steel** and **Aluminum** mat
 To edit the material properties, you can double-click the **Material** object, or right-click on the Material object and select the **Edit** command from the context menu. In the material editor, you select the **Library** tab > **General Materials** > **Aluminum Alloy**, then click **Import** button or double-click the **Aluminum Alloy** entry. The material properties are set as shown in Figure below. Click the **OK** to save and exit the material editing. 
 
 You can rename this new material object to **Aluminum** by press **F2** key or right-clicking.
+
+![finite_element_analysis_welsim_ex1_mat_al](../../../img/3_guide/ch2_start_ex1_mat_al.png "Defining a new Aluminum material from the material library.")
 
 
 ## Specifying analysis
@@ -19,15 +25,24 @@ In the **Properties View** of the **FEM Project** object, you set the **Physics 
 ## Preparing geometry
 Next, you can import the geometry file “h_section_multibody.step” and assign the materials to the corresponding parts. As shown in Figure, three Part objects in the Geometry group represent three bodies in the Graphics window, respectively. You assign the Aluminum material to the Part2, which is the connection body in the middle, the rest bodies are assigned with Structural Steel material.
 
+![finite_element_analysis_welsim_ex1_geom_mat](../../../img/3_guide/ch2_start_ex1_geom_mat.png "Importing an assembly model and assign Aluminum material to the middle connection part.")
+
 
 ## Setting mesh
 To obtain a fine mesh for the analysis, you set the **Mesh Settings** properties Quadratic to True, and **Maximum Size** to **3e-3**.
 
+![finite_element_analysis_welsim_ex1_mesh_settings](../../../img/3_guide/ch2_start_ex1_mesh_settings.png "Global mesh settings.")
+
 Clicking the Mesh command from the **Toolbar** or **FEM Menu**, you can mesh the geometries. There are 42,329 nodes, and 25,920 Tet10 elements generated.
+
+![finite_element_analysis_welsim_ex1_mesh_data](../../../img/3_guide/ch2_start_ex1_mesh_data.png "The Mesh object shows the generated mesh for a three-part assembly. It is consist of 21117 nodes, and 12427 Tet10 elements.")
 
 
 ## Specifying contacts 
 Next, you need to define two **Contact Pairs** to bond the three parts into one uni-body for the analysis. Clicking the **Add Contact** command from the **Toolbar** or **FEM Menu**, you add two **Contact Pair** objects into the tree. You can rename these two objects to Contact1 and Contact2, respectively. Then you select the surfaces for **Master** and **Target Geometry** properties as shown in Figures below. 
+
+![finite_element_analysis_welsim_ex1_contact1](../../../img/3_guide/ch2_start_ex1_contact1.png "Defining the Master and Target surfaces for the first contact pair.")
+![finite_element_analysis_welsim_ex1_contact2](../../../img/3_guide/ch2_start_ex1_contact2.png "Defining the Master and Target surfaces for the second contact pair.")
 
 
 ## Defining analysis settings
@@ -68,6 +83,3 @@ After inserting the result object and settings the **Set Number** to **15**, dou
 
 ![finite_element_analysis_welsim_ex5_rst_temp15](../../../img/3_guide/ch2_start_ex5_rst_temp15.png "Evaluating and displaying the temperature result at final step.")
 
-
-!!!info
-    This project file is located at examples/quick_thermal_transient_solid_01.wsdb.

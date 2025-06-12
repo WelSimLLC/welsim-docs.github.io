@@ -1,6 +1,6 @@
 # Legal notice
 ## Copyright and trademark information
-©2023 WelSimulation LLC. All rights reserved. Unauthorized use, distribution or duplication is prohibited.
+©2025 WelSimulation LLC. All rights reserved. Unauthorized use, distribution or duplication is prohibited.
 
 WELSIM and any and all WelSimulation LLC brand, product, service and feature names, logos and slogans are registered trademarks or trademarks of WelSimulation LLC. or its subsidiaries in the United States or other countries. All other brand, product, service and feature names or trademarks are the property of their respective owners.
 

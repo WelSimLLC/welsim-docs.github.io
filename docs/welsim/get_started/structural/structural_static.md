@@ -1,5 +1,10 @@
 # Static structural analysis
-This example shows you how to conduct a 3D static structural analysis for an assembly. 
+This example shows you how to conduct a 3D static structural analysis for an assembly. Static structural analysis uses *FrontISTR* as the default solver. It also supports using *CalculiX* or *Elmer FEM* as a solver.
+
+
+### Selecting units
+In the beginning, we select the MKS unit system for the subsequential simulation. Clicking **Preferences** from the **Toolbar** or **Menu**, and setting the **Metric (kg, m, s, A, N, V)**.
+![welsim_preferences_unit_kgms](../../../img/3_guide/welsim_preferences_unit_kgms.png "Selecting MKS unit system from the preferences.")
 
 ### Defining materials
 In this multi-body analysis, we assign **Structural Steel** and **Aluminum** materials to different parts. Since a **Structural Steel** object is already added as you initialize a **FEM Project**, you only need to insert an aluminum material object by clicking **Add Material** from **Toolbar** or **FEM Menu**. 
@@ -8,7 +13,7 @@ To edit the material properties, you can double-click the **Material** object, o
 
 You can rename this new material object to **Aluminum** by press **F2** key or right-clicking.
 
-![finite_element_analysis_welsim_ex1_mat_al](../../../img/3_guide/ch2_start_ex1_mat_al.png "Defining a new Aluminum material from the material library.").
+![finite_element_analysis_welsim_ex1_mat_al](../../../img/3_guide/ch2_start_ex1_mat_al.png "Defining a new Aluminum material from the material library.")
 
 
 ## Specifying analysis
@@ -68,9 +73,5 @@ After setting the property **Type** to **Total Deformation**, double-clicking on
 Adding a stress result object is similar. Clicking the **Stress** result from **Toolbar** or **Structural Menu**, you insert a stress object to the tree. Evaluating the default **von-Mises Stress** Type, you obtain the von-Mises stress contour on bodies in the **Graphics** window. The **Maximum** and **Minimum** values of stress data are displayed in the **Properties View**, **Tabular Data**, and **Chart** windows.
 
 ![finite_element_analysis_welsim_ex1_rst_stress_vm](../../../img/3_guide/ch2_start_ex1_rst_stress_vm.png "Evaluating and displaying the von-Mises stress result of the assembly subjected to the given conditions.")
-
-!!!info 
-    This project file is located at examples/quick_structural_static_solid_01.wsdb.
-
     
 
