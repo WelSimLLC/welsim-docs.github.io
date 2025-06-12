@@ -59,9 +59,3 @@ You can export the complete material data to an external XML file. The following
 * XML in WELSIM Material (MatML 3.1) schema.
 * JSON in WELSIM Material schema.
 * OpenRadioss input script
-
-<!-- To implement the exporting, you can use one of the following methods:
-
-* Click the **Export Materials** button from the standard **Toolbar**.
-* Click the **Export Materials** item from the **Material Menu**.
-* Right-click the **Material Project** and select the **Export Materials** item from the context menu. -->
