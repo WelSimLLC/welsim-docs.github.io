@@ -11,7 +11,7 @@ The following lists the general and specifics steps in conducting static structu
 
 1. **Creating analysis environment**: In the Properties View of the FEM Project object, set the Physics Type to Structural and Analysis Type to Static. Since the static structural analysis is the default analysis type, you do not need to change these properties if the analysis is newly created. See [Creating Analysis Environment](steps.md#creating-analysis-environment) for details.
 
-2. **Defining materials**: The material properties can be either linear or nonlinear. You must define the sufficient properties that are required in the solving process. See [Defining Materials](../../mateditor/mat_overview.md) for details.
+2. **Defining materials**: The material properties can be either linear or nonlinear. You must define the sufficient properties that are required in the solving process. See [Defining Materials](../../mateditor/mateditor_overview.md) for details.
 
 3. **Specifying geometries**: See [Specifying Geometries](geometry.md) for details.
 
@@ -38,9 +38,9 @@ The transient structural analysis can be either linear or nonlinear. The non-lin
 ### Conducting a transient structural analysis
 The following lists the general and specifics steps in conducting transient structural analysis:
 
-1. **Creating analysis environment**: In the Properties View of the FEM Project object, set the Physics Type to Structural and Analysis Type to Transient. You can choose either Implicit or Explicit time integration solver. See [Creating Analysis Environment](steps.md#creating-analysis-environment) for details.
+1. **Creating analysis environment**: In the Properties View of the FEM Project object, set the Physics Type to Structural and Analysis Type to Transient. You can choose either Implicit or Explicit time integration solver. **The Explicit is recommended due to using the powerful OpenRadioss solver.** See [Creating Analysis Environment](steps.md#creating-analysis-environment) for details.
 
-2. **Defining materials**: The material properties can be either linear or nonlinear. You must define the sufficient properties that are required in the solving process. See [Defining Materials](../../mateditor/mat_overview.md) for details.
+2. **Defining materials**: The material properties can be either linear or nonlinear. You must define the sufficient properties that are required in the solving process. See [Defining Materials](../../mateditor/mateditor_overview.md) for details.
 
 3. **Specifying geometries**: See [Specifying Geometries](geometry.md) for details.
 
@@ -73,7 +73,7 @@ The following lists the general and specifics steps in conducting modal structur
 
 1. **Creating analysis environment**: From the properties view of FEM Project object, set the **Physics Type** to **Structural** and **Analysis Type** to **Modal**. See [Creating Analysis Environment](steps.md#creating-analysis-environment) for details.
 
-2. **Defining materials**: The material properties can be either linear or nonlinear. However, the nonlinearity in the modal analysis is ignored due to the characteristics of eigen solver algorithms. You must define the sufficient properties that are required in the solving process. For example, the mass density parameter must be defined. See [Defining Materials](../../mateditor/mat_overview.md) for details.
+2. **Defining materials**: The material properties can be either linear or nonlinear. However, the nonlinearity in the modal analysis is ignored due to the characteristics of eigen solver algorithms. You must define the sufficient properties that are required in the solving process. For example, the mass density parameter must be defined. See [Defining Materials](../../mateditor/mateditor_overview.md) for details.
 
 3. **Specifying geometries**: See [Specifying Geometries](geometry.md) for details.
 
@@ -106,7 +106,7 @@ The following lists the general and specifics steps in conducting static structu
 
 1. **Creating analysis environment**: In the Properties View of the FEM Project object, set the Physics Type to Thermal and Analysis Type to Static. See [Creating Analysis Environment](steps.md#creating-analysis-environment) for details.
 
-2. **Defining materials**: The material properties can be either linear or nonlinear. You must define the sufficient properties that are required in the solving process. See [Defining Materials](../../mateditor/mat_overview.md) for details.
+2. **Defining materials**: The material properties can be either linear or nonlinear. You must define the sufficient properties that are required in the solving process. See [Defining Materials](../../mateditor/mateditor_overview.md) for details.
 
 3. **Specifying geometries**: See [Specifying Geometries](geometry.md) for details.
 
@@ -134,7 +134,7 @@ The following lists the general and specifics steps in conducting transient ther
 
 1. **Creating analysis environment**: In the Properties View of the FEM Project object, set the Physics Type to Thermal and Analysis Type to Transient. See [Creating Analysis Environment](steps.md#creating-analysis-environment) for details.
 
-2. **Defining materials**: The material properties can be either linear or nonlinear. You must define the sufficient properties that are required in the solving process. See [Defining Materials](../../mateditor/mat_overview.md) for details.
+2. **Defining materials**: The material properties can be either linear or nonlinear. You must define the sufficient properties that are required in the solving process. See [Defining Materials](../../mateditor/mateditor_overview.md) for details.
 
 3. **Specifying geometries**: See [Specifying Geometries](geometry.md) for details.
 
@@ -165,7 +165,7 @@ The following lists the general and specifics steps in conducting electrostatic 
 
 1. **Creating analysis environment**: In the Properties View of the FEM Project object, set the Physics Type to Electromagnetic and Analysis Type to ElectroStatic. See [Creating Analysis Environment](steps.md#creating-analysis-environment) for details.
 
-2. **Defining materials**: The material properties can be either linear or nonlinear. You must define the sufficient properties that are required in the solving process. See [Defining Materials](../../mateditor/mat_overview.md) for details.
+2. **Defining materials**: The material properties can be either linear or nonlinear. You must define the sufficient properties that are required in the solving process. See [Defining Materials](../../mateditor/mateditor_overview.md) for details.
 
 3. **Specifying geometries**: See [Specifying Geometries](geometry.md) for details.
 
@@ -193,7 +193,7 @@ The following lists the general and specifics steps in conducting magnetostatic 
 
 1. **Creating analysis environment**: In the Properties View of the FEM Project object, set the Physics Type to Electromagnetic and Analysis Type to MagnetoStatic. See [Creating Analysis Environment](steps.md#creating-analysis-environment) for details.
 
-2. **Defining materials**: The material properties can be either linear or nonlinear. You must define the sufficient properties that are required in the solving process. See [Defining Materials](../../mateditor/mat_overview.md) for details.
+2. **Defining materials**: The material properties can be either linear or nonlinear. You must define the sufficient properties that are required in the solving process. See [Defining Materials](../../mateditor/mateditor_overview.md) for details.
 
 3. **Specifying geometries**: See [Specifying Geometries](geometry.md) for details.
 
@@ -231,14 +231,12 @@ The Library Outline Tab shows an outline of the contents of the selectable mater
 
 
 
+## CFD Analysis
+To be added ...
 
 
-
-
-
-
-
-
+## Molecular Dynamics Analysis
+To be added ...
 
 
 

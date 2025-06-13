@@ -1,5 +1,5 @@
 # Material workflow
-This section discusses about the material data, and precedures for working with MatEditor.
+This section discusses about the material data, and precedures for working with *MatEditor*.
 
 ## Material data
 Material data is the source of the material information that is used for the analysis of the system it is contained in. The information in a material data component system is used if shared to an analysis system. MatEditor allows you to view, edit, and add data for use in your analysis system.

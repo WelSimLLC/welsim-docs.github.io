@@ -24,7 +24,7 @@ The functional components of the graphical user interface include the following 
 The WELSIM window owns panes that can carry project objects, properties, graphics, output, tabular data, and chart views.Window management functionalities enable you to dock, hide, show, move, and resize the windows. 
 
 ### Hiding and showing
-The windows can be hidden or shown by setting the view controller. As shown in Figure [tab:ch3_guide_gui_windows], there are two ways to control the window views:
+The windows can be hidden or shown by setting the view controller. As shown in Figures below, there are two ways to control the window views:
 
 1. Browse the **View Menu** > **Windows**, toggle the windows that you would show or hide.
 2. Right mouse button clicks on the **Toolbar**, you can toggle the windows.
@@ -66,7 +66,7 @@ An example of the Project Explorer window is shown in Figure below.
 !!! note
     The tree outline contains all elements that applied in the simulation study. The root object displays the number of projects in the solution. The Material project node includes all material specification. The FEM project contains the analysis settings, multiple FEM projects are allowed in the solution.
 
-### Knowing the tree objects
+#### Knowing the tree objects
 The tree objects in the Project Explorer window have the following conventions:
 
 * Object Icon appears to the left of the object in the tree list. The icon is intended for users to identify the type of object. For example, icons for computational results always consist of three colors (red, green, and blue), which can help distinguish other objects.
@@ -74,7 +74,7 @@ The tree objects in the Project Explorer window have the following conventions:
 * A down-head arrow symbol to the left of the object indicates that the object expends all child objects. Clicking the arrow to collapse the sub-objects.
 * To delete an object from the tree list, you can right click on the target object and select **Delete**.
 
-### Object status symbols
+#### Object status symbols
 The status icons are smaller than the tree object icon and located to the right bottom corner of the object icon. These symbols are intend to provide a quick visual reference to the status of the object. The details of the status symbols are described in Table below.
 
 | Status Name | Symbol Icon | Description |
@@ -86,7 +86,7 @@ The status icons are smaller than the tree object icon and located to the right 
 | Needs to be Updated | ![finite_element_analysis_welsim_status_needtoupdate](../../img/3_guide/ch3_guide_status_needtoupdate.png){:width="100%"} | An answers object or its child objects are not evaluated. Waiting for user to update |
 
 
-### Suppressing/Unsuppressing objects
+#### Suppressing/Unsuppressing objects
 Most of the objects in the Project Explorer window can be suppressed or unsuppressed by users. A suppressed object means that it is excluded from the further analysis. For example, suppressing a boundary condition excludes the boundary condition from the study and the further solutions. You also can unsuppress the object with the restored object attributes. 
 
 There are two ways to suppress/unsuppress an object:
@@ -102,7 +102,7 @@ The Properties View is located in the bottom left corner of the main user interf
 ![finite_element_analysis_welsim_properties_view2](../../img/3_guide/ch3_guide_properties_view2.png "An example of Properties View for the object of contact. The Display tab of the properties.")
 
 
-### Features
+#### Features
 The features of the Properties View include:
 
 * Resizable and movable.
@@ -111,7 +111,7 @@ The features of the Properties View include:
 *  OK/Cancel buttons for geometry selection.
 *  Property cell can change background color according to the content. 
 
-### Group property
+#### Group property
 The **Group Property** is a read-only and occupy the entire row of the Properties pane, as shown in Figure below.
 
 ![finite_element_analysis_welsim_group_property](../../img/3_guide/ch3_guide_group_title.png "An example of group field in the Properties pane, displayed with dark gray color.")
@@ -119,7 +119,7 @@ The **Group Property** is a read-only and occupy the entire row of the Propertie
 The group provides you better user experience by organizing the properties into distinct categories. 
 
 
-### Undefined or invalid properties
+#### Undefined or invalid properties
 In the Properties View, the undefined or invalid fields are highlighted in yellow as shown in Figure below.
 
 ![finite_element_analysis_welsim_invalid_property](../../img/3_guide/ch3_guide_properties_invalid.png "An example of undefined fields highlighted in yellow.")
@@ -127,7 +127,7 @@ In the Properties View, the undefined or invalid fields are highlighted in yello
 Once the property is well defined and becomes valid, highlight yellow color disappears.
 
 
-### Drop-down list
+#### Drop-down list
 The combo property shows the drop-down list as user clicks the attribute as shown in Figure below. 
 
 ![finite_element_analysis_welsim_dropdown_property](../../img/3_guide/ch3_guide_properties_dropdown.png "An example of drop-down property")
@@ -136,7 +136,7 @@ The combo property shows the drop-down list as user clicks the attribute as show
     You can adjust the width of the columns by dragging the separator between the columns.
 
 
-### Text entry
+#### Text entry
 In the text entry field, you can input strings, numbers, or integers, depending on the type of the cell as shown in Figure below.
 
 ![finite_element_analysis_welsim_text_property](../../img/3_guide/ch3_guide_properties_textentry.png "An example of text entry property.")
@@ -144,7 +144,7 @@ In the text entry field, you can input strings, numbers, or integers, depending 
 The invalid value for the specific cell will be discarded, or the cell shows red background.
 
 
-### Geometry selection
+#### Geometry selection
 Geometry Selection allows users to scope topological entities from the graphics window. An example of Geometry Selection property is shown in Figure below. 
 
 ![finite_element_analysis_welsim_property_sel2](../../img/3_guide/ch3_guide_properties_geo_sel2.png "An example of Geometry Selection property.")
@@ -152,8 +152,8 @@ Geometry Selection allows users to scope topological entities from the graphics 
 After selecting appropriate geometry entities, you can click the OK button to set the current selection into the field. Clicking the Cancel button does not change the pre-existing selection.
 
 
-### Graphics window
-The Graphics window displays the geometry, annotation, mesh, result, etc. The components in the graphics window could be: 
+### 3D Graphics window
+The 3D Graphics window displays the geometry, annotation, mesh, result, etc. The components in the graphics window could be: 
 
 * 3D Graphics
 * A scale rule
@@ -169,14 +169,53 @@ An example view of the Grpahics window is shown in Figure below.
 
 ![finite_element_analysis_welsim_graphics_full](../../img/3_guide/ch3_guide_graphics_full.png "A full view of the Graphics window.")
 
+#### 3D View Controls
+The blue bar across any 3D View shows a pushpin icon on its left. When the mouse rolls over this icon, a panel for configuring the 3D View is displayed. The panel is hidden when the mouse moves away. For persistent display of this panel, just click the pushpin icon.
+![finite_element_analysis_welsim_graphics_3dview](../../img/3_guide/graphics_3d_controls.png "A view of the 3D View Controls.")
+
+* **Center 3D view** (small square) centers the slice on the currently visible 3D view content and all loaded volumes (even if volumes that are not visible). The field of view (zoom factor) is not adjusted, therefore it may be necessary to zoom in/out to see all objects. To reset the center and field of view at the same time, click in the 3D view and hit r key.
+
+* **Viewpoint direction** switches orientation of the view between standard directions. Clicking on Left, Right, Anterior, Posterior, Superior, Inferior button will make the 3D content viewed from that direction.
+
+* **View link** button synchronizes properties across 3D views (viewpoint position, direction, ruler, orientation marker, etc. settings).
+
+* **Orthographic/perspective rendering** mode toggle. Orthographic mode (parallel projection) is useful for assessing size, because displayed object size does not depend on distance from the viewpoint. Perspective mode provides better depth perception, because objects that are closer appear larger.
+
+* **Ruler** controls display of ruler. Only available in orthographic rendering mode.
+
+* **Stereo viewing** enables stereoscopic display. Red/blue and anaglyph modes just require inexpensive red/blue colored glasses. Other modes require special 3D display hardware. Note that SlicerVirtualReality extension offers superior stereo viewing and interaction experience, with fully immersive 3D visualization by a single click of a button, and rich interaction with objects in the scene using 3D controllers.
+
+* More options (…)
+    * Use depth peeling must be enabled for correct rendering of semi-transparent surfaces (in models, markups, etc). It may make rendering updates slightly slower and artifacts when volume rendering is used in the view.
+    * Show/Hide frames per second (FPS) displays rendering speed in the corner of the view.
+    * Show/Hide the logo of WELSIM
+    * Show/Hide the version
+
+* **Orientation Marker** controls display of human, cube, etc in lower right corner.
+
+* **Visibility options** controls visibility of view background color and displayed components.
+
+* **Spin** continuously spins the view around.
+
+* **Rock** continuously rocks the view left-to-right.
+
+* **Zoom in/out** slightly zooms in/out the view. Convenient buttons for touchscreens.
+
+
+#### Context menu from RMB
+Right mouse clicking shows you a context menu, which contains operations such as Zoom To Fit, Isometric View, Image to Clipboard, different camera views.
+
+![finite_element_analysis_welsim_graphics_context_menu](../../img/3_guide/graphics_3d_rmb_context_menu.png "A view of the context menu of Graphics.")
+
 
 ### Tabular data window
 **Tabular Data** window is designed in better reviewing the input and output data. When you select the following objects in the tree window, both Tabular Data and Chart windows display data on the interface. 
 
+* Material properties
 * Boundary conditions
 * Body conditions
 * Results
-* Probe Results
+* Probe results
 
 The listed data in Tabular Data window is consistent with the curves in the [Chart window](#chart-window). As an example shown in Figure below, you can see the maximum and minimum values at all time steps are consistent between those two windows. 
 
@@ -188,6 +227,8 @@ The Chart window displays the curves for the selected tree object. The curves ar
 
 ![finite_element_analysis_welsim_chart_view1](../../img/3_guide/ch3_guide_chart_view1.png "An example of Chart window showing result data.")
 
+!!!note
+    The Table and Chart share the same data, and both update synchronously. 
 
 ### Spreadsheet window
 The spreadsheet window provides object data in the form of tables, charts, or text to you. This widget usually contains the summarized data for a collection of properties. Note that not all objects contain a spreadsheet window, only the object that has large data may own a spreadsheet window. The behaviors of the spreadsheet window are:

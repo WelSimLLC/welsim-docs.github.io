@@ -1,8 +1,8 @@
 # Graphical user interface
-The MatEditor workspace is an independent interface and display relavant items as you configured.
+The **MatEditor** workspace is an independent interface and display relavant items as you configured.
 
 ## Layout reference
-Presented below are two layout configurations for the MatEditor view. The first configuration is displayed by clicking on "Library" tab in toolbox. The second configure is shown by clicking on "Build" tab in toolbox. You can switch this two layout mode by clicking the tabs.
+Presented below are two layout configurations for the MatEditor view. The first configuration is displayed by clicking on "**Library**" tab in toolbox. The second configure is shown by clicking on "**Build**" tab in toolbox. You can switch this two layout mode by clicking the tabs.
 
 ![finite_element_analysis_mateditor_gui1](../img/mateditor/finite_element_analysis_mateditor_gui1.png "MatEditor GUI 1.")
 
@@ -26,29 +26,38 @@ Presented below are two layout configurations for the MatEditor view. The first 
 The following items in the menu bar are provided by MatEditor:
 
 ### File
-
 * **New**: Create a new material object in the tree window.
 * **Open**: Retrieve material data from an external XML file. This command remove all existing material data in the system.
 * **Save**: Save current material data into an external XML file.
 * **Save as**: Save current material data into an designated folder and in a specific XML file name.
-* **Export material data**: Output selected material data into an exteral XML file.
-* **Import material data**: Input material data from an external XML file. The existing material data will not be removed.
 * **Exit**: Close the software.
 
-### Edit
+### View
+* **Windows**: Toggle on/off the display of Project Explorer, Tabular Data, and Chart windows. 
+* **Status Bar**: Toggle on/off the display of status bar on the window bottom.
 
+### Edit
 * **Activate**: Set the selected material object as current.
 * **Duplicate**: Create a new material object and copy all propeties from the selected to the newly created material.
 * **Delete**: Remove the selected material object(s).
-* **Delete all**: Remove all material objects.
+* **Delete All**: Remove all material objects.
 
 ### Units
 This menu provides all avilable unit systems and units. Once one unit (system) is chosen, the default unit is determined. The units for the newly created material data will be automatically set to the chosen unit(system).
 
+### Tools
+* **Export MatML file**: Export current material data to the MatML file.
+* **Export Abaqus/CalculiX Script**: Export current material data to the Abaqus format file.
+* **Export Elmer FEM Script**: Export current material data to the Elmer FEM format file.
+* **Export OpenRadioss Script**: Export current material data to the OpenRadioss format file.
+
 ### Help
 * **Help**: Direct the user to the online user manual. 
-* **About**: Display the software and hardware information dialog.
-
+* **Frequently Asked Question**: Browse the website [https://github.com/WelSimLLC/WelSim-Apps/wiki/MatEditor-FAQ](https://github.com/WelSimLLC/WelSim-Apps/wiki/MatEditor-FAQ).
+* **Report an Issue**: Browse the website [https://github.com/WelSimLLC/WelSim-Apps/issues](https://github.com/WelSimLLC/WelSim-Apps/issues).
+* **Check for Updates**: Check the updates.
+* **Follow on X.com**: Visit the website [https://x.com/getwelsim](https://x.com/getwelsim).
+* **About MatEditor**: Display the software and hardware information dialog.
 
 
 ## Toolbar
@@ -59,12 +68,15 @@ The following item in the toolbar is provided by MatEditor:
 | ![finite_element_analysis_mateditor_icon_new](../img/mateditor/finite_element_analysis_mateditor_icon_new.png "MatEditor New icon.") | New | Create a new material object in the tree window. |
 | ![finite_element_analysis_mateditor_icon_open](../img/mateditor/finite_element_analysis_mateditor_icon_open.png "MatEditor Open icon.") | Open | Retrieve material data from an external XML file. This command remove all existing material data in the system. |
 | ![finite_element_analysis_mateditor_icon_save](../img/mateditor/finite_element_analysis_mateditor_icon_save.png "MatEditor Save icon.") | Save | Save current material data into an external XML file.|
+| ![finite_element_analysis_mateditor_icon_abaqus](../img/mateditor/logo_abaqus.png "MatEditor Abaqus icon.") | Export Abaqus/CalculiX scripts | Save current material data into an external Abaqus/CalculiX file.|
+| ![finite_element_analysis_mateditor_icon_elmer](../img/mateditor/logo_elmer.png "MatEditor Elmer FEM icon.") | Export Elmer FEM scripts | Save current material data into an external Elmer FEM file.|
+| ![finite_element_analysis_mateditor_icon_openradioss](../img/mateditor/welsim_open_radioss_icon.png "MatEditor OpenRadioss icon.") | Export OpenRadioss scripts | Save current material data into an external OpenRadioss file.|
 | ![finite_element_analysis_mateditor_icon_help](../img/mateditor/finite_element_analysis_mateditor_icon_help.png "MatEditor Help icon.") | Help | Direct the user to the online user manual. |
 | ![finite_element_analysis_mateditor_icon_about](../img/mateditor/finite_element_analysis_mateditor_icon_about.png "MatEditor About icon.") | About | Display the software and hardware information dialog. |
 
 
 ## Toolbox
-MatEditor Toolbox contains two tabs: Library and Build. These two tabs function as:
+MatEditor Toolbox contains two tabs: **Library** and **Build**. These two tabs function as:
 
 * **Library**: contains default material data that allows user to directly use. Clicking this tab displays the [Library Outline Pane](#library-outline-pane).
 * **Build**: contains all supported material properties that enable user to compose material data. Clicking this tab displays the [Property Outline Pane](#property-outline-pane).
