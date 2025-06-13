@@ -174,8 +174,12 @@ The supported material properties are listed by category here.
 
 * Isotropic Thermal Conductivity
 * Orthotropic Thermal Conductivity
-* Specific Heat
 * Specific Gas Constant
+* Enthalpy
+* Specific Heat Cp
+* Specific Heat Cv
+* Specific Heat Rho0Cp
+
 
 ### Electromagnetics
 
@@ -192,6 +196,7 @@ The supported material properties are listed by category here.
 * Orthotropic Dielectric Loss Tangent
 * Orthotropic Magnetic Loss Tangent
 * Core Loss Model
+
 
 ### Fluid
 * Dynamic Viscosity

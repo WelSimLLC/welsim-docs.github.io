@@ -1,4 +1,4 @@
-This chapter is the user guide for working with WELSIM application, which is used to perform various types of structural, thermal, and electromagnetic analyses. The entire simulation process is tied together by a unified graphical user interface. 
+This chapter is the user guide for working with WELSIM application, which is used to perform various types of structural, thermal,  electromagnetic, fluid, and molecular dynamics analyses. The entire simulation process is tied together by a unified graphical user interface. 
 
 # Overview
 

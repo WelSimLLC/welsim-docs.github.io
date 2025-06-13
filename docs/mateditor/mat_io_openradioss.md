@@ -30,9 +30,9 @@ At present, MatEditor supports eight types of unit systems commonly used in engi
 * LAW34 — Boltzmann
 * LAW35 — Maxwell-Kelvin-Voigt
 * LAW40 — Maxwell-Kelvin
-* LAW42 — Odgen 1/2/3
+* LAW42 — Odgen 1 / 2 / 3
 * LAW92 — Arruda-Boyce
-* LAW94 — Yeoh 1/2/3
+* LAW94 — Yeoh 1 / 2 / 3
 * LAW100 — Polynomial, Neo-Hookean, Mooney-Rivlin2
 
 ### Plasticity
