@@ -51,7 +51,7 @@ The supported material properties are listed in the table below.
 | Category | Materials |
 | -------- | --------- |
 | Basic | Density, Isotropic Thermal Expansion, Isotropic Instantaneous Thermal Expansion, Orthotropic Thermal Expansion, Orthotropic Instantaneous Thermal Expansion, Constant Damping Coefficient, Local Coordinates, Mass  |
-| Linear Elastic | Isotropic Elasticity, Orthotropic Elasticity, Viscoelastic |
+| Linear Elastic | Isotropic Elasticity, Orthotropic Elasticity, Anisotropic Fabric |
 | Test Data | Uniaxial Test Data, Biaxial Test Data, Shear Test Data, Volumetric Test Data, SimpleShear Test Data, Uniaxial Tension Test Data, Uniaxial Compression Test Data, Visco Bulk Test Data, Visco Hear Test Data, P-B Test Data|
 | Hyperelastic | Arruda-Boyce, Blatz-Ko, Gent, Mooney-Rivlin 2/3/5/9, Neo-Hookean, Ogden 1st/2nd/3rd Order, Polynomial 1st/2nd/3rd Order, Yeoh 1st/2nd/3rd Order |
 | Plasticity | Bilinear Isotropic Hardening, Multilinear Isotropic Hardening, Bilinear Kinematic Hardening, Multilinear Kinematic Hardening, Anand Viscoplasticity, Barlat3, Barlat2000, Concreate Model, Cowper-Symonds Strength, Deshpande-Fleck Model, Gary Model, Gurson Model, Hensel-Spittel Yield, Hill Anisotropic MCC, Hill Orthotropic, Hill Orthotropic Thermal, HoneyComb, Johnson-Cook Strength, Johnson-Holmquist Strength, Johnson-Voce-Prucker, Paperboard Model, Plastic Elastomer, Ramberg-Osgood Hardening, Rate-Dependent Multilinear Hardening, Steel Phase Transformation, Steinberg-Guinan Strength, Swift Hardening, Swift-Voce Model, Vegter Model, Yoshida-Uemori Strength, Zerilli-Armstrong Strength, Zhao Strength |

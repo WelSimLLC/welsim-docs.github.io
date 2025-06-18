@@ -55,7 +55,11 @@ At present, MatEditor supports eight types of unit systems commonly used in engi
 * LAW103 — Hensel-Spittel
 * LAW110 — Vegter
 
-### Concrete
+### Composite and Fabric
+* LAW58 - Density + Anisotropic Fabric
+
+
+### Concrete and Rock
 * LAW24(CONC) - Density + Isotropic Elasticity + Concrete Model
 
 
