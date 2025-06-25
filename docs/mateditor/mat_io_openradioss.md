@@ -55,17 +55,21 @@ At present, MatEditor supports eight types of unit systems commonly used in engi
 * LAW103 — Hensel-Spittel
 * LAW110 — Vegter
 
-### Concrete
-* LAW24(CONC) - Density + Isotropic Elasticity + Concrete Model
+### Composite and Fabric
+* LAW58 — Density + Anisotropic Fabric
+
+
+### Concrete and Rock
+* LAW24(CONC) — Density + Isotropic Elasticity + Concrete Model
 
 
 ### Failure Models
 * ALTER — Glass Failure
 * BIQUD — BiQuadratic
 * COCKCROFT — Cockcroft
-* CONNECT-Connect
+* CONNECT — Connect
 * EMC — ExtendedMohr-Coulomb
-* ENERGY-Energy
+* ENERGY — Energy
 * FABRIC — Fabric
 * FLD — Forming Limit Diagram
 * GURSON — Gurson
@@ -97,8 +101,8 @@ At present, MatEditor supports eight types of unit systems commonly used in engi
 * Stiff-Gas EOS
 
 ### Fluids
-* LAW06 - Kinematic Viscosity
-* ALE - ALE
+* LAW06 — Kinematic Viscosity
+* ALE — ALE
 
 
 **More materials will be added upon user's request.**
