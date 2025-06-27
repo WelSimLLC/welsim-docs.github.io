@@ -137,11 +137,6 @@ nav:
   - Home: index.md
   - Features: features.md
 
-  - Installation:
-    - WelSim licensing guide: install/licensing.md
-    - Linux installation guide: install/linux.md
-    - Windows installation guide: install/windows.md
-
   - WELSIM:
     - Getting started:
       - Quick start: welsim/get_started/quick_start.md
@@ -202,9 +197,14 @@ nav:
       - Structural: welsim/vm/structural.md
       - Thermal: welsim/vm/thermal.md
       - Electromagnetic: welsim/vm/electromagnetic.md
-
-    - Troubleshooting:  welsim/troubleshooting.md
   
+    - Installation:
+      - WelSim licensing guide: welsim/install/licensing.md
+      - Linux installation guide: welsim/install/linux.md
+      - Windows installation guide: welsim/install/windows.md
+
+    - Glossary: glossary.md
+
 
   - MatEditor:
     - Overview: mateditor/mateditor_overview.md
@@ -250,10 +250,8 @@ nav:
   #   - GNU Lesser General Public License (LGPL): legal/LGPL.md
 
   - Release notes: welsim/release_notes.md
-  # - License: license.md
-  - Glossary: glossary.md
-  # - Support: support.md
 
+  - Troubleshooting:  troubleshooting.md
 
 # Google Analytics
 # google_analytics:
