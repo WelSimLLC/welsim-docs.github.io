@@ -75,7 +75,7 @@ At present, MatEditor supports eight types of unit systems commonly used in engi
 * GURSON — Gurson
 * HASHIN — Hashin
 * HC_DSSE — Ladeveze Delamination
-* JOHNSON-Johnson-Cook
+* JOHNSON — Johnson-Cook
 * MULLINS_OR — Mullins Effect
 * NXT — NXT
 * ORTHBIQUAD — Orthotropic Biquad
