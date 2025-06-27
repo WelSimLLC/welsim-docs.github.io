@@ -1,36 +1,36 @@
 # Quick start
-This section demonstrates you the primary GUI features and workflow of WELSIM application.
+This section demonstrates the primary GUI features and workflow in WELSIM.
  
 ## Graphical user interface
 
 ### Overview
-The WELSIM application provides you an ease-of-use graphical interface to customize the finite element analysis settings. The primary components of graphical user interface include:
+WELSIM provides an intuitive graphical user interface (GUI) to customize the finite element analysis settings. The primary components of the GUI include:
 
-* Menus
+* Menu
 * Toolbar
-* Project Explorer (Tree) Window 
-* Properties View Window
-* Graphics Window
-* Tabular Data Window
-* Chart Window
-* Output Window
+* Project Explorer (Tree) window 
+* Properties View window
+* Graphics window
+* Tabular Data window
+* Chart window
+* Output window
 
-An overview of graphical user interface is shown in [Figure](../../img/3_guide/ch2_start_gui_overall.png) below.
+An overview of the GUI is shown in the [Figure](../../img/3_guide/ch2_start_gui_overall.png) below.
 
 ![finite_element_analysis_welsim_gui_overall](../../img/3_guide/ch2_start_gui_overall.png "An overview of WELSIM graphical user interface.")
 
-### Menu and toolbar
-Menus and toolbar contain primary commands of the application as shown in Figure below. Sections [Main Menus](../users/gui.md#main-menus) and [Toolbars](../users/gui.md#toolbars) of have more details. 
+### Menu and Toolbar
+The Menu and Toolbar contain the primary commands of the application as shown below. Sections [Main Menus](../users/gui.md#main-menus) and [Toolbars](../users/gui.md#toolbars) have more details. 
 
 ![finite_element_analysis_welsim_gui_toolbar](../../img/3_guide/ch2_start_gui_toolbar.png "Menus and Toolbar in the graphical user interface.")
 
 ### Graphics window
-The Graphics window displays the geometries and associated symbols, text, and annotations. In this window, you can pan, rotate, and zoom the 3D geometries using mouse and key. In addition to the geometries, this window may contain annotation,  [Graphics Toolbar](../users/gui.md#graphics-toolbar), coordinate system symbol, ruler, logo, etc. A schematic view of the Graphics window is shown in Figure below.
+The Graphics window displays the geometries with the associated symbols, text, and annotations. In this window, you can pan, rotate, and zoom to better see the 3D geometries. In addition to the geometries, this window may contain annotation,  [Graphics Toolbar](../users/gui.md#graphics-toolbar), coordinate system symbol, ruler, logo, etc. A schematic view of the Graphics window is shown below.
 
 ![finite_element_analysis_welsim_gui_graphics](../../img/3_guide/ch2_start_gui_graphics.png "Graphics window in the graphical user interface")
 
 ### Unit definition
-The Perferences window lists the available units for users to choose. It is usually the first step to start the simulation.
+The Preferences window lists the available units users can choose. It's usually the first step to start the simulation.
 ![finite_element_analysis_welsim_gui_preferences_units](../../img/3_guide/quick_preferences_units.png "Unit definition in the graphical user interface")
 
 The bottom right of the main window shows the current units in use.
@@ -38,31 +38,31 @@ The bottom right of the main window shows the current units in use.
 
 
 ### Material definition spreadsheet
-The material module provides a spreadsheet panel for you to define and review material properties. An overview of the material property spreadsheet is shown in Figure below.
+The material module provides a spreadsheet for users to define and review material properties. An overview of the material property spreadsheet is shown below.
 ![finite_element_analysis_welsim_gui_material](../../img/3_guide/ch2_start_gui_mat.png "Material definition spreadsheet in the graphical user interface")
 
 ### Geometry display
-The Graphics window displays the 3D geometries, meshed elements, result contours, etc. A 3D geometry and object properties are shown in Figure below.
+The Graphics window displays the 3D geometries, meshed elements, result contours, etc. A 3D geometry and object properties are shown below.
 
 ![finite_element_analysis_welsim_gui_gemoetry](../../img/3_guide/ch2_start_gui_geometry.png "Graphics window in the graphical user interface")
 
 ### Mesh display
-Graphics window displays the mesh as you select the mesh related objects in the tree. The Properties View shows the statistical data of the mesh as shown in Figure below.
+The Graphics window displays the mesh when mesh related objects are selected in the tree. The Properties View shows the statistical data of the mesh as shown below.
 
 ![finite_element_analysis_welsim_gui_mesh](../../img/3_guide/ch2_start_gui_mesh.png "Graphics window displays the meshed geometries and mesh data.")
 
 ### Boundary condition display
-For the boundary conditions, the Graphics window displays the highlighted entities (faces, edges, vertices), the Property View, Tabular Data, and Chart windows show the boundary values over time. The Properties View window also allows you to scope the geometry entities and set values, as shown in Figure below.
+For the boundary conditions, the Graphics window displays the highlighted entities (faces, edges, vertices). The Properties View, Tabular Data, and Chart windows show the boundary values over time. Additionally, the Properties View window allows users to scope geometry entities and set values, as shown below.
 
 ![finite_element_analysis_welsim_gui_bc](../../img/3_guide/ch2_start_gui_bc.png "WELSIM graphical user interface shows boundary conditions in Properties View, Graphics, Tabular Data, and Chart windows.")
 
 ### Solution display
-After solving, the user interface displays the solution and results. The Graphics window displays the result contour and legend. The Properties View shows the Maximum and Minimum values of the result at the given Set Number. The Tabular Data and Chart Windows illustrate the maximum and minimum values over the time as shown in Figure  below.
+After solving, the user interface displays the solution and results. The Graphics window displays the result contour and legend. The Properties View shows the maximum and minimum values of the result at the given Set Number. The Tabular Data and Chart windows also illustrate the maximum and minimum values over the time, as shown below.
 
 ![finite_element_analysis_welsim_gui_result](../../img/3_guide/ch2_start_gui_result.png "WELSIM graphical user interface shows result contour on Graphics window, and related data on the Properties View, Tabular Data, and Chart windows.")
 
 ### Result legend
-You can adjust the result contour and legend by right clicking on the legend field and set the parameters in the context menu, as shown in Figure below.
+Users can adjust the result contour and legend by right clicking on the legend field and setting the parameters in the context menu, as shown below.
 
 ![finite_element_analysis_welsim_gui_result_legend](../../img/3_guide/ch2_start_gui_result_legend.png "The result legend in Graphics window supports the right click to adjust display details.")
 
