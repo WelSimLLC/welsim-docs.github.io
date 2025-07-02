@@ -128,7 +128,7 @@ This section lists problems and error messages that you may encounter while sett
 
 An example of the license message error message is shown in Figure [fig:ch10_license_not_found].
 
-![finite_element_analysis_welsim_license_not_found](../img/10_lic/license_file_not_found.PNG "Example of license manager error message.")
+![finite_element_analysis_welsim_license_not_found](../../img/10_lic/license_file_not_found.PNG "Example of license manager error message.")
 
 
 

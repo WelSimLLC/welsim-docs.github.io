@@ -55,16 +55,16 @@ You only need to download one installer file.
 
 1. Navigate to the directory where you placed the installer file. Run the installer by double click.
 2. The WELSIM installation Launcher appears as shown in Figure below.
-![finite_element_analysis_welsim_windows_install1](../img/12_install_win/install_win_01.PNG "WELSIM Installation Launcher.")
+![finite_element_analysis_welsim_windows_install1](../../img/12_install_win/install_win_01.PNG "WELSIM Installation Launcher.")
 3. Click the Next button to start the installation on your computer.
 4. The license agreement appears as shown in Figure below. Read the agreement, and if you agree to the terms and conditions, select **I Agree**. **Click Next**. 
-![finite_element_analysis_welsim_windows_install2](../img/12_install_win/install_win_02.PNG "WELSIM License Agreement during Installation.")
+![finite_element_analysis_welsim_windows_install2](../../img/12_install_win/install_win_02.PNG "WELSIM License Agreement during Installation.")
 5. The installation folder setting appears as shown in the figure below. You can input your designated directory or keep the default one. After specifying the directory, Click Next.
-![finite_element_analysis_welsim_windows_install3](../img/12_install_win/install_win_03.PNG "WELSIM Installation Folder.")
+![finite_element_analysis_welsim_windows_install3](../../img/12_install_win/install_win_03.PNG "WELSIM Installation Folder.")
 6. The prerequesites libraries installation appears as shown in the figure below. Your system requires these libraries to run the WELSIM application. Click Yes.
-![finite_element_analysis_welsim_windows_install4](../img/12_install_win/install_win_04.PNG "WELSIM Prerequesites Installation.")
+![finite_element_analysis_welsim_windows_install4](../../img/12_install_win/install_win_04.PNG "WELSIM Prerequesites Installation.")
 7. The installation completed as shown in the figure below. Click Finish. 
-![finite_element_analysis_welsim_windows_install7](../img/12_install_win/install_win_07.PNG "WELSIM Installation Completed.")
+![finite_element_analysis_welsim_windows_install7](../../img/12_install_win/install_win_07.PNG "WELSIM Installation Completed.")
 
 
 ## Activating the WELSIM
@@ -82,7 +82,7 @@ In this section, assuming you already received the license file wsimkey.dat. To 
 5. After receiving the license file (wsimkey.dat), click “Enter Code” button to import the license. In the License Code interface, the user can paste the license content from clipboard, or directly import the license from file. 
 6. Click OK button to activate the WELSIM. A successfully activated software is shown in figure below.
 
-![finite_element_analysis_welsim_windows_install13](../img/12_install_win/install_win_13.PNG "WELSIM software is successfully activated.")
+![finite_element_analysis_welsim_windows_install13](../../img/12_install_win/install_win_13.PNG "WELSIM software is successfully activated.")
 
 
 ## Starting the software
@@ -93,7 +93,7 @@ After installation, starting the WELSIM software is straightforward. Here are th
 3. Browse the directory of installation, double click the *runWelSim.exe* file.
 
 As shown in the figure below, WESLIM application is started successfully on the Windows operation system.
-![finite_element_analysis_welsim_windows_install12](../img/12_install_win/install_win_12.PNG "WELSIM user interface on Windows 10, 64-bit.")
+![finite_element_analysis_welsim_windows_install12](../../img/12_install_win/install_win_12.PNG "WELSIM user interface on Windows 10, 64-bit.")
 
 
 ## Uninstalling the software
