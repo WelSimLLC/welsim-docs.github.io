@@ -169,6 +169,7 @@ nav:
       - Configuring study settings: welsim/users/study.md
       - Setting up boundary conditions: welsim/users/bcs.md
       - Using results: welsim/users/results.md
+      - External Solvers: welsim/external_solvers.md
       - Objects reference: welsim/users/objects.md
 
   # - Meshing user's guide: 

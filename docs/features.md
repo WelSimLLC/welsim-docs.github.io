@@ -1,12 +1,12 @@
 # Features
-As a general-purpose engineering simulation software program, WELSIM contains tons of features those allow you to conduct various simulation studies. 
+As a general-purpose engineering simulation software, WELSIM contains features that will allow you to conduct even the most complex of various simulation studies. 
 
 
 ## Specification
 | Specification | Description |
 | ------------- | ----------- |
-| Operaton system | Microsoft Windows 10/11, 64-bit; <br/>  Linux: Ubuntu 22.04 LTS and higher versions, 64-bit; <br/> 3D rendering driver: OpenGL 3.2 or higher |
-| Physical memory | At least 4 GB, and 32 GB and higher is recommended |
+| Operaton system | Microsoft Windows: 10/11, 64-bit <br/>  Linux: Ubuntu 22.04 LTS and higher versions, 64-bit <br/> 3D rendering driver: OpenGL 3.2 or higher |
+| Physical memory | At least 4 GB; 32 GB and higher is recommended |
 | Geometry modules | Imported geometry formats: STEP, STL, GDS <br/>Built-in geometry generation: Box, Cylinder, Sphere, Plane, Line, Circle, Vertex <br/> Boolean operations: Union, Intersection, Cut| 
 | Supported automatic mesh | Tet10, Tet4, Tri6, Tri3 |
 
@@ -19,14 +19,14 @@ As a general-purpose engineering simulation software program, WELSIM contains to
 ## Structural
 | Structural analysis | Description |
 | ------------- | ----------- |
-| Types | Static, transient, and modal |
-| Materials | Isotropic elastic, hyper-elastic, plastic, visco-elastic, and creep |
-| Deformation types | Small, and finite | 
-| Contact types| bonded, frictionless, and frictional; small and finite sliding |
-| Boundary conditions | constraints, displacement, force, pressure, velocity, acceleration |
-| Body conditions | body force, acceleration, standard earth gravity, rotational velocity |
-| Results | deformations, stresses, strains, velocity, acceleration |
-| Probe results | reaction force (total, x, y, z) |
+| Types | Static, transient, modal |
+| Materials | Isotropic elastic, hyper-elastic, plastic, visco-elastic, creep |
+| Deformation types | Small, finite | 
+| Contact types| Bonded, frictionless, frictional; Small, finite sliding |
+| Boundary conditions | Constraints, displacement, force, pressure, velocity, acceleration |
+| Body conditions | Body force, acceleration, standard earth gravity, rotational velocity |
+| Results | Deformations, stresses, strains, velocity, acceleration |
+| Probe results | Reaction force (total, x, y, z) |
 
 * [x] Nonlinear materials.
 * [x] Contact analysis.
@@ -35,14 +35,14 @@ As a general-purpose engineering simulation software program, WELSIM contains to
 * [x] Implicit dynamics.
 
 
-### Explicit Structural Dynamics (using OpenRadioss)
+## Explicit Structural Dynamics (using OpenRadioss)
 | Structural analysis | Description |
 | ------------- | ----------- |
-| Materials | Isotropic elasto-plastic (Johnson-Cook, Zerillii-Armstrong, Gray, Cowper-Symonds, Yoshida-Uemori, Hensel-Spittel, voce), Isotropic linear elastic (Hooke's law, Johnson-Cook), hyper-elastic (Ogden, Neo-Hookean, Mooney–Rivlin), visco-elastic (Boltamann, Generalized Maxwell-Kelvin), creep, explosive (JWL), Rock (Drucker-Prager), Hill orthotropic, etc |
+| Materials | Isotropic elasto-plastic (Johnson-Cook, Zerillii-Armstrong, Gray, Cowper-Symonds, Yoshida-Uemori, Hensel-Spittel, Voce), Isotropic linear elastic (Hooke's law, Johnson-Cook), hyper-elastic (Ogden, Neo-Hookean, Mooney–Rivlin), visco-elastic (Boltamann, Generalized Maxwell-Kelvin), creep, explosive (JWL), Rock (Drucker-Prager), Hill orthotropic, etc |
 | Equation of state | Compaction, Gruneisen, ideal gas, linear, LSZK, Murnaghan, NASG, Noble, Polynomial, Puff, Sesame, Tillotson |
 | Failure models | Alter, Biquad, Chang, Cockcroft, EMC, Energy, Fabric, forming limit diagram, Gurson, Hashin, Johnson, Ladeveze, Mullins effect with Ogden and Roxburgh criteria, NXT, orthotropic biquad, Puck, Spalling, Wierzbicki |
 | Element type | Solid, shell |
-| Contact types | Bonded, frictionless, and frictional; small and finite sliding |
+| Contact types | Bonded, frictionless, frictional; Small, finite sliding |
 | Boundary, body and initial conditions** | Constraints, displacement, force, pressure, velocity, acceleration, temperature, initial velocity, initial acceleration, etc. |
 | Results**| Deformations, stresses, strains, velocity, acceleration, contact force, temperature, etc |
 
@@ -53,8 +53,8 @@ As a general-purpose engineering simulation software program, WELSIM contains to
 
 | Thermal analysis | Description |
 | ------------- | ----------- |
-| Types | Static, and transient |
-| Materials | linear and nonlinear |
+| Types | Static, transient |
+| Materials | Linear, nonlinear |
 | Initial conditions | Initial temperature |
 | Boundary conditions | Temperature, convection, radiation, heat flux, heat flow, perfectly insulated |
 | Body conditions | Internal heat generation |
@@ -69,23 +69,23 @@ As a general-purpose engineering simulation software program, WELSIM contains to
 ## Computational Fluid Dynamics (using SU2)
 | Fluid analysis | Description |
 | ------------- | ----------- |
-| Types | Steady-state, and transient |
+| Types | Steady-state, transient |
 | Governing equation | Incompressible and compressible Euler, Navier-Stokes, RANS | 
-| Boundary conditions | wall, inlet, outlet, pressure, velocity, temperature, convection, heat flux |
-| Results | velocity, pressure, mass density, pressure coefficient, mach number, energy |
+| Boundary conditions | Wall, inlet, outlet, pressure, velocity, temperature, convection, heat flux |
+| Results | Velocity, pressure, mass density, pressure coefficient, mach number, energy |
 
-* [x] incompressible fluids.
-* [x] compressible fluids.
+* [x] Incompressible fluids.
+* [x] Compressible fluids.
 
 
-## Electromangetic (using Palace)
+## Electromagnetic (using Palace)
 
 | Electromagnetic analysis | Description |
 | ------------------------ | ----------- |
 | Types | Electrostatic, magnetostatic, eigenmode, driven, full-wave transient |
-| Materials | linear |
-| Boundary conditions | ground, voltage, symmetry, zero charge, surface charge density, electric displacement, insulting, magnetic vector potential, magnetic flux density |
-| Results | voltage, electric field, electric displacement, magnetic vector potential, magnetic flux density, magnetic field, energy density |
+| Materials | Linear |
+| Boundary conditions | Ground, voltage, symmetry, zero charge, surface charge density, electric displacement, insulting, magnetic vector potential, magnetic flux density |
+| Results | Voltage, electric field, electric displacement, magnetic vector potential, magnetic flux density, magnetic field, energy density |
 
 * [x] Vector result display.
 * [x] Parallel computing.
@@ -105,5 +105,5 @@ As a general-purpose engineering simulation software program, WELSIM contains to
 
 
 ## Need new features?
-Feel free to send questions, comments, requests, bug reports, and success stories. Asking for a new feature usually results in adding the request to our TODO list or, if it already is in the list, in assigning higher priority to it.
+Feel free to send questions, comments, requests, bug reports, and success stories. Asking for a new feature usually results in us adding it to our TODO list, or if it's already is on the list, assigning it higher priority.
 
