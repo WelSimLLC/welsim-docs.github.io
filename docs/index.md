@@ -37,8 +37,8 @@ If you are interested in our other free engineering software:
 [1]: https://welsim.com/download
 [2]: https://welsim.com/pricing
 [3]: welsim/get_started/quick_start.md
-[4]: install/windows.md
-[5]: install/linux.md
+[4]: welsim/install/windows.md
+[5]: welsim/install/linux.md
 [6]: welsim/users/overview.md
 [7]: welsim/theory/introduction.md
 [8]: unitconverter/unitconverter.md
@@ -47,4 +47,4 @@ If you are interested in our other free engineering software:
 [11]: beamsection/beamsection_overview.md
 
 
-<small>Last Updated: June 25th, 2025</small>
+<small>Last Updated: July 4th, 2025</small>

@@ -62,29 +62,29 @@ $ ./WelSim31SetupUbuntu.run
 
 2.The WELSIM installation Launcher appears as shown below.
 
-![finite_element_analysis_welsim_linux_install1](../img/11_install_linux/welsimLinuxInstall01.png "WELSIM Installation Launcher on the Linux Platform.")
+![finite_element_analysis_welsim_linux_install1](../../img/11_install_linux/welsimLinuxInstall01.png "WELSIM Installation Launcher on the Linux Platform.")
 
 3.Click the Next button to start the installation on your computer.
 
 4.The installation folder setting appears as shown below. You can input your designated directory or keep the default one. After specifying the directory, Click Next.
 
-![finite_element_analysis_welsim_linux_install2](../img/11_install_linux/welsimLinuxInstall02.png "WELSIM Installation folder.")
+![finite_element_analysis_welsim_linux_install2](../../img/11_install_linux/welsimLinuxInstall02.png "WELSIM Installation folder.")
 
 5.The component selection interface appears as shown below. You can select the components that you want to install. The user can keep the default selection, and know the occupied disk space for this installation. **Click Next**.
 
-![finite_element_analysis_welsim_linux_install3](../img/11_install_linux/welsimLinuxInstall03.png "WELSIM Installation Component Selection.")
+![finite_element_analysis_welsim_linux_install3](../../img/11_install_linux/welsimLinuxInstall03.png "WELSIM Installation Component Selection.")
 
 6.The license agreement appears as shown below. Read the agreement, and if you agree to the terms and conditions, select **I Agree**. **Click Next**. 
 
-![finite_element_analysis_welsim_linux_install4](../img/11_install_linux/welsimLinuxInstall04.png "WELSIM License Agreement during Installation.")
+![finite_element_analysis_welsim_linux_install4](../../img/11_install_linux/welsimLinuxInstall04.png "WELSIM License Agreement during Installation.")
 
 7.The installation needs your conformation to start as shown below. **Click Install**. 
 
-![finite_element_analysis_welsim_linux_install5](../img/11_install_linux/welsimLinuxInstall05.png "WELSIM Installation Starts.")
+![finite_element_analysis_welsim_linux_install5](../../img/11_install_linux/welsimLinuxInstall05.png "WELSIM Installation Starts.")
 
 8.The installation completed as shown below. **Click Next**. 
 
-![finite_element_analysis_welsim_linux_install6](../img/11_install_linux/welsimLinuxInstall06.png "WELSIM Installation Completed.")
+![finite_element_analysis_welsim_linux_install6](../../img/11_install_linux/welsimLinuxInstall06.png "WELSIM Installation Completed.")
 
 
 ## Starting the software on Linux
@@ -110,7 +110,7 @@ sudo apt install openmpi-bin libomp-dev
 
 3.WELSIM application starts, the GUI shows the system information in Figure below.
 
-![finite_element_analysis_welsim_linux_run](../img/11_install_linux/welsimLinuxRun01.png "WELSIM user interface on Linux Ubuntu 16.04 LTS.")
+![finite_element_analysis_welsim_linux_run](../../img/11_install_linux/welsimLinuxRun01.png "WELSIM user interface on Linux Ubuntu 16.04 LTS.")
 
 
 ## Uninstalling the software
