@@ -23,3 +23,9 @@ The result contour fails to display due to the dismatched mesh. The error messag
 * **Solution**: This could be a software defect, send the model to the [info@welsim.com](mailto:info@welsim.com) for investigation.
 
 
+### Issue 3: Excessive solving time for explicit transient structrual analysis
+When using OpenRadioss as the solver for transient structural problems, the solving time is significantly longer than expected.
+* **Cause**: When the material density is too small, it can lead to very small time steps, which in turn causes the solving time to be excessively long.
+
+* **Solution**: Check the material density value, and increase the value if it is incorrect.
+
