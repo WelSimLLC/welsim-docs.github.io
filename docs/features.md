@@ -105,5 +105,5 @@ As a general-purpose engineering simulation software, WELSIM contains features t
 
 
 ## Need new features?
-Feel free to send questions, comments, requests, bug reports, and success stories. Asking for a new feature usually results in us adding it to our TODO list, or if it's already is on the list, assigning it higher priority.
+Feel free to send questions, comments, requests, bug reports, and success stories. Asking for a new feature usually results in us adding it to our TODO list, or if it's already on the list, assigning it higher priority.
 
