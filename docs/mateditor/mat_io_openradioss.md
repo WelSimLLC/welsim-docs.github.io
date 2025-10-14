@@ -57,8 +57,8 @@ At present, MatEditor supports eight types of unit systems commonly used in engi
 * LAW110 — Vegter
 
 ### Composite and Fabric
+* LAW25 (COMPSH) — Density + Orthotropic Elasticity + Composite Tsai-Wu
 * LAW58 — Density + Anisotropic Fabric
-
 
 ### Concrete and Rock
 * LAW24(CONC) — Density + Isotropic Elasticity + Concrete Model
