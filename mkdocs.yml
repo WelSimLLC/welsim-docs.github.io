@@ -203,7 +203,7 @@ nav:
       - WelSim licensing guide: welsim/install/licensing.md
       - Linux installation guide: welsim/install/linux.md
       - Windows installation guide: welsim/install/windows.md
-
+      - External solvers: welsim/install/solvers.md
     - Glossary: glossary.md
 
 

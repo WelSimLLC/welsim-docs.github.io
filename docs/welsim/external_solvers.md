@@ -1,6 +1,6 @@
 # External solvers
 
-WELSIM is a simulation software that supports multiple solvers and is one of the most comprehensive and widely compatible pre- and post-processing tools for open-source solvers in the world. Currently supported open-source solvers include FrontISTR, Elmer FEM, OpenRadioss, CalculiX, SU2, and LAMMPS. Each of these solvers offers distinct features and advantages, allowing users to choose the one that best suits their needs. Thanks to WELSIM’s powerful pre- and post-processing capabilities, the time required for modeling when using these solvers is significantly reduced.
+WELSIM is a simulation software that supports multiple solvers and is one of the most comprehensive and widely compatible pre- and post-processing tools for open-source solvers in the world. Currently supported open-source solvers include *FrontISTR*, *Elmer FEM*, *OpenRadioss*, *CalculiX*, *SU2*, *Palace*, and *LAMMPS*. Each of these solvers offers distinct features and advantages, allowing users to choose the one that best suits their needs. Thanks to WELSIM’s powerful pre- and post-processing capabilities, the time required for modeling when using these solvers is significantly reduced.
 
 This section primarily introduces the details and usage methods of external solvers.
 
@@ -10,18 +10,22 @@ When invoking external solvers, a simple configuration of the solver paths is re
 ![finite_element_analysis_welsim_preferences_solvers](../img/welsim/welsim_preferences_solvers.png "welsim preferences solvers.")
 
 
-The details of each supported solver are summarized below. This table also provides information on the integration method and the level of support for each solver.
+Details of each supported solver are provided in the table below. This table includes solver information, integration and calling methods with WELSIM, support status for preprocessing and postprocessing, and whether they are included in WELSIM's installer.
 
 
-| Solver | Download Site | Connection Type | Pre-processing | Post-processing |  
-| --- | --- | --- | --- | --- | 
-| Elmer FEM | https://elmerfem.org | Path | Yes | No |
-| OpenRadioss | https://openradioss.org | Path | Yes | Yes |
-| FrontISTR | https://elmerfem.org | File | Yes | Yes |
-| CalculiX | https://calculix.de | File | Yes | No |
-| Palace | https://awslabs.github.io/palace | File | Yes | Yes |
-| SU2 | https://su2code.github.io | File | Yes | Yes |
-| LAMMPS | https://lammps.org | File | Yes | No |
+| Solver | Download Site | Connection Type | Pre-processing | Post-processing | Included in the installer | 
+| --- | --- | --- | --- | --- | --- |
+| Elmer FEM | https://elmerfem.org | Path | Yes | No | No |
+| OpenRadioss | https://openradioss.org | Path | Yes | Yes | No|
+| FrontISTR | https://frontistr.com | File | Yes | Yes | Yes |
+| CalculiX | https://calculix.de | File | Yes | No | No |
+| Palace | https://awslabs.github.io/palace | File | Yes | Yes | Yes |
+| SU2 | https://su2code.github.io | File | Yes | Yes | Yes |
+| LAMMPS | https://lammps.org | File | Yes | Yes | No |
+
+
+Due to restrictions of the GNU open-source license, *Elmer FEM*, *OpenRadioss*, *CalculiX*, and *LAMMPS* are not included in WELSIM's installer and require users to download them independently. You can configure these solvers through the Preferences in WELSIM.
+
 
 
 ## Default solver
