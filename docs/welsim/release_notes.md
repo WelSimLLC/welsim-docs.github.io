@@ -21,6 +21,28 @@ To inspect the currently installed version, open the **About** dialog in WELSIM 
 
 ## Changelog
 
+### 2026R1 (3.2) <small>Jan. at 2026</small>
+* Allow user to toggle off the display of application version in the top right corner of Graphics window.
+* Add **Self Contact** to the Contact object, and support relevant annotation and highlight.
+* Add Rotation properties to the Displacement boundary condition.
+* Generate particles from the shapes.
+    - Display particles together with the geometry shapes or mesh.
+* Export the generated particles to the VTK PolyData files.
+* Enhance support for the Electromagnetics module (Palace solver) 
+    - Upgrade the Palace solver to the latest version (0.15), upgrade libCEEM to the latest version (0.12), upgrade MFEM to the 4.8.1, upgrade MUMPS to 5.8.1, upgrade HYPRE to 2.33.0, upgrade METIS to the latest 5.3.1.
+    - Support Poynting Vector results for the Transient EM wave analysis.
+* Enhance support for OpenRadioss solver
+    - Support /PROP/TYPE16 fabric geometrical property. 
+    - Support self contact in /INTER/TYPE24 format.
+    - Support SPH element command SPHCEL.
+* New features added to **MatEditor**
+    - Support LAW24 (CONC), LAW58 (FABR_A) material properties for OpenRadioss.
+    - Support LAW73 and LAW74 material for OpenRadioss via new Hill Orthotropic Thermal property.
+    - Support LAW6(HYD_VISC) for OpenRadioss.
+    - Support LAW25 (COMPSH) for OpenRadioss.
+* Upgrade Intel MKL, Fortran Compiler, and Redistributable to the 2025.3
+
+
 ### 2025R2 (3.1) <small>May at 2025</small>
 * Enhance support for *OpenRadioss* solver
     - Support Remote Displacement BC, create a Rigid Body node for the associated boundary.
