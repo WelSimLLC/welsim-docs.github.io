@@ -34,4 +34,4 @@ The plain text file with no header dat looks like below:<br/>
     Due to the lack of the header information, the units of the imported data is determined by the current units of the Table. In addition, the pivoting column may not be set if the file does not contain such data. The number of columns must be identicial to that of the pre-defined table quantities.
 
 ## Examples
-The examples of the import/export tabular data are available at our [GitHub page](https://github.com/WelSimLLC/Examples/tree/main/TabularData).
+The examples of the import/export tabular data are available at our [GitHub page](https://github.com/WelSimLLC/WelSimAutoTests/tree/main/02_MaterialData).

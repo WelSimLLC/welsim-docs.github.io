@@ -19,7 +19,6 @@ The result contour fails to display because of mismatched mesh. The error messag
 ![finite_element_analysis_welsim_result_data_point_error1](img/7_trouble/result_data_point_error1.jpg "Result does not display, and error message says about point data."){#welsim_result_data_point_error1}
 
 * **Cause**: This issue is because of mismatched data between the result and mesh.
-
 * **Solution**: This could be a software defect, so please send the model to [info@welsim.com](mailto:info@welsim.com) for investigation.
 
 
@@ -27,6 +26,10 @@ The result contour fails to display because of mismatched mesh. The error messag
 When using OpenRadioss as the solver for transient structural problems, the solving time can be significantly longer than expected.
 
 * **Cause**: When the material density is too small, it can lead to very small time steps, which in turn causes the solving time to be excessively long.
-
 * **Solution**: Check the material density value, and increase the value if it is incorrect.
 
+## Issue 4: CFD model 
+When using SU2 as the solver to compute a CFD model, the solving completes successfully, but the results cannot be read or the contour plots cannot be displayed.
+
+* **Cause**: The file name or file path is too long. SU2 has a limit on the length of the output path for results.
+* **Solution**: Save the project file (*.wsdb) to a directory with a shorter path to reduce the total length of the full file name. Re-solve the model, and the results will be readable.

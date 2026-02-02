@@ -44,20 +44,21 @@ At present, MatEditor supports eight types of unit systems commonly used in engi
 * LAW32 — Hill
 * LAW36 — Density + Isotropic Elasticity + Rate-Dependent Multilinear Hardening
 * LAW44 — Cowper-Symonds
-* LAW93 — Orthotropic Hill
 * LAW48 — Zhao
 * LAW49 — Steinberg-Guinan
 * LAW52 — Gurson
 * LAW57 — Barlet3
+* LAW73/74 — Density + Isotropic Elasticity + Orthotropic Hill Thermal
 * LAW78 — Yoshida-Uemori
 * LAW79 — Johnson-Holmquist
 * LAW84 — Swift-Voce
+* LAW93 — Orthotropic Hill
 * LAW103 — Hensel-Spittel
 * LAW110 — Vegter
 
 ### Composite and Fabric
+* LAW25 (COMPSH) — Density + Orthotropic Elasticity + Composite Tsai-Wu
 * LAW58 — Density + Anisotropic Fabric
-
 
 ### Concrete and Rock
 * LAW24(CONC) — Density + Isotropic Elasticity + Concrete Model

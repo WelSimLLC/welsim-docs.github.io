@@ -31,17 +31,18 @@ This section shows the statistic data of the current testing cases.
 
 | **Folder** | **Number of Tests** | **External Solver** |
 |------------|---------------------|-----------|
-| 04_GUI | 28 |  |
-| 06_MatEditor | 158 |  |
-| 07_Mesh | 12 | |
+| 04_GUI | 29 |  |
+| 06_MatEditor | 162 |  |
+| 07_Mesh | 13 | |
 | 08_Result | 8 | |
 | 09_BeamSection | 8 | |
-| 11_FrontISTR | 46 | |
-| 12_OpenRadioss | 18 | [x] |
-| 13_CalculiX | 8 | [x] |
+| 11_FrontISTR | 49 | |
+| 12_OpenRadioss | 22 | [x] |
+| 13_CalculiX | 21 | [x] |
 | 14_Elmer | 12 | [x] |
 | 21_SU2 | 9 |  |
-| 32_Palace | 2 |  |
+| 32_Palace | 21 |  |
 | 41_Lammps | 1 | [x] |
-| **Total** | **310** |
+| **Total** | **355** |
 
+The latest information of test cases is available at [GitHub/WelSimAutoTest](https://github.com/WelSimLLC/WelSimAutoTests?tab=readme-ov-file#statistics).
