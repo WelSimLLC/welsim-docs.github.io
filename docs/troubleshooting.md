@@ -29,3 +29,7 @@ When using OpenRadioss as the solver for transient structural problems, the solv
 
 * **Solution**: Check the material density value, and increase the value if it is incorrect.
 
+## Issue 4: CFD model 
+When using SU2 as the solver to compute a CFD model, the solving completes successfully, but the results cannot be read or the contour plots cannot be displayed.
+* **Cause**: The file name or file path is too long. SU2 has a limit on the length of the output path for results.
+* **Solution**: Save the project file (*.wsdb) to a directory with a shorter path to reduce the total length of the full file name. Re-solve the model, and the results will be readable.

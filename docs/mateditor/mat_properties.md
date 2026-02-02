@@ -48,6 +48,7 @@ The supported material properties are listed by category here.
 * Biaxial Test Data
 * Shear Test Data
 * Volumetric Test Data
+* Simple Shear Test Data
 * Uniaxial Plastic Strain Test Data
 * Shear Test Data - Viscoelastic
 * Bulk Test Data - Viscoelastic

@@ -16,7 +16,7 @@ As a general-purpose engineering simulation software, WELSIM contains features t
 * [x] Supported solver scripts: [CalculiX](https://calculix.de), [Elmer FEM](https://elmerfem.org), [FrontISTR](https://frontistr.com), [LAMMPS](https://lammps.org), [MFEM](https://mfem.org), [OpenRadioss](https://openradioss.org), [Palace](https://awslabs.github.io/palace), and [SU2](https://su2code.github.io).
 
 
-## Structural
+## Structural (FrontISTR & CalculiX)
 | Structural analysis | Description |
 | ------------- | ----------- |
 | Types | Static, transient, modal |
@@ -35,7 +35,7 @@ As a general-purpose engineering simulation software, WELSIM contains features t
 * [x] Implicit dynamics.
 
 
-## Explicit Structural Dynamics (using OpenRadioss)
+## Explicit Structural Dynamics (OpenRadioss)
 | Structural analysis | Description |
 | ------------- | ----------- |
 | Materials | Isotropic elasto-plastic (Johnson-Cook, Zerillii-Armstrong, Gray, Cowper-Symonds, Yoshida-Uemori, Hensel-Spittel, Voce), Isotropic linear elastic (Hooke's law, Johnson-Cook), hyper-elastic (Ogden, Neo-Hookean, Mooney–Rivlin), visco-elastic (Boltamann, Generalized Maxwell-Kelvin), creep, explosive (JWL), Rock (Drucker-Prager), Hill orthotropic, etc |
@@ -49,7 +49,7 @@ As a general-purpose engineering simulation software, WELSIM contains features t
 * [x] More details about the supported OpenRadioss materials are [here]().
 
 
-## Thermal (using FrontISTR)
+## Thermal (FrontISTR & CalculiX)
 
 | Thermal analysis | Description |
 | ------------- | ----------- |
@@ -66,7 +66,7 @@ As a general-purpose engineering simulation software, WELSIM contains features t
 * [ ] Orthotropic thermal conductivity material.
 * [ ] Heat flux results.
 
-## Computational Fluid Dynamics (using SU2)
+## Computational Fluid Dynamics (SU2)
 | Fluid analysis | Description |
 | ------------- | ----------- |
 | Types | Steady-state, transient |
@@ -78,7 +78,7 @@ As a general-purpose engineering simulation software, WELSIM contains features t
 * [x] Compressible fluids.
 
 
-## Electromagnetic (using Palace)
+## Electromagnetic (Palace)
 
 | Electromagnetic analysis | Description |
 | ------------------------ | ----------- |
@@ -93,7 +93,7 @@ As a general-purpose engineering simulation software, WELSIM contains features t
 * [ ] Nonlinear materials.
 
 
-## Molecular Dynamics (using LAMMPS)
+## Molecular Dynamics (LAMMPS)
 | Molecular dynamics analysis | Description |
 | ------------------------ | ----------- |
 | Units Type | LJ, Real, Metal, SI, CGS, Electron, Micro, Nano |
