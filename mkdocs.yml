@@ -3,7 +3,7 @@ site_name: WelSim Documentation
 site_author: WelSimulation LLC
 site_url: http://docs.welsim.com
 site_description: WELSIM, MatEditor, CurveFitter, BeamSection and UnitConverter online user manual
-#site_dir: ../welsim-docs-gh-pages
+site_dir: site
 
 
 # Repository
@@ -12,7 +12,7 @@ repo_url: https://github.com/WelSimLLC/welsim-docs.github.io
 
 
 # Copyright
-copyright: Copyright &copy; 2017 - 2025 <a href="https://welsim.com">WelSimulation LLC</a> 
+copyright: Copyright &copy; 2017 - 2026 <a href="https://welsim.com">WelSimulation LLC</a> 
 
 
 # Configuration
@@ -125,7 +125,9 @@ markdown_extensions:
    custom_fences:
     - name: math
       class: arithmatex
-      format: !!python/name:pymdownx.arithmatex.fence_mathjax_format
+      format: !!python/object/apply:pymdownx.arithmatex.arithmatex_fenced_format
+        kwds:
+          mode: mathjax
 - pymdownx.tabbed
 - pymdownx.tasklist:
     custom_checkbox: true
