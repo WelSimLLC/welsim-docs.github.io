@@ -16,7 +16,7 @@ Details of each supported solver are provided in the table below. This table inc
 | Solver | Download Site | Connection Type | Pre-processing | Post-processing | Included in the installer | 
 | --- | --- | --- | --- | --- | --- |
 | Elmer FEM | https://elmerfem.org | Path | Yes | No | No |
-| OpenRadioss | https://openradioss.org | Path | Yes | Yes | No|
+| OpenRadioss(OpenCourant) | https://opencourant.org | Path | Yes | Yes | No|
 | FrontISTR | https://frontistr.com | File | Yes | Yes | Yes |
 | CalculiX | https://calculix.de | File | Yes | No | No |
 | Palace | https://awslabs.github.io/palace | File | Yes | Yes | Yes |

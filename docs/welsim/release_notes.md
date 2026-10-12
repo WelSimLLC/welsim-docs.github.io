@@ -21,6 +21,15 @@ To inspect the currently installed version, open the **About** dialog in WELSIM 
 
 ## Changelog
 
+### 2026R2 (3.3) <small>April at 2026</small>
+* Allow user to change the size of the toolbar icons. The options are Small (16px), Normal (24px), Large(36px), and Extra Large(48px).
+* Support multiple user interface styles including Classic, Dark, and Light. The Dark mode becomes the default theme.
+* Upgrade VC++ and GNU C++ compilers to the c++17 standard.
+* Upgrade Qt from 5.15.2 to 6.10.2
+* Upgrade VTK from 8.2 to 9.4, ITK from 5.2 to 5.4
+* Enhancement and improvement.
+
+
 ### 2026R1 (3.2) <small>Jan. at 2026</small>
 * Allow user to toggle off the display of application version in the top right corner of Graphics window.
 * Add **Self Contact** to the Contact object, and support relevant annotation and highlight.
