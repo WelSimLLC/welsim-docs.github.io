@@ -13,6 +13,7 @@ As a general-purpose engineering simulation software, WELSIM contains features t
 * [x] Project data: file with suffix "wsdb" and the associated folder (same file name).
 * [x] Supported mesh export formats: UNV, MFEM, SU2, VTK.
 * [x] Supported result export formats: VTK, Tecplot, Plain Text.
+* [x] Open results in external post-processing tools: ParaView, VisIt, Ovito, and Gmsh.
 * [x] Supported solver scripts: [CalculiX](https://calculix.de), [Elmer FEM](https://elmerfem.org), [FrontISTR](https://frontistr.com), [LAMMPS](https://lammps.org), [MFEM](https://mfem.org), [OpenRadioss](https://openradioss.org), [Palace](https://awslabs.github.io/palace), and [SU2](https://su2code.github.io).
 
 

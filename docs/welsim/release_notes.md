@@ -7,7 +7,7 @@ To upgrade WELSIM to the latest version, download the installer from our [offici
 <br/>
 ​
 
-Since 2022R2(version 2.1), WelSim provides a version checker in the application, users can click **Help** -> **Check for Updates** on the menu and know if a new version is available. 
+Since 2022R2(version 2.1), WelSim provides a version checker in the application, users can click **Help** -> **Check for Updates** on the menu and know if a new version is available. Since 2026R3 (3.4), the same dialog can also download the new installer and start the upgrade inside the application. 
 
 ![finite_element_analysis_welsim_check_updates](../img/19/finite_element_analysis_welsim_check_updates2.png "Check updates.")
 
@@ -20,6 +20,28 @@ To inspect the currently installed version, open the **About** dialog in WELSIM 
 
 
 ## Changelog
+
+### 2026R3 (3.4) <small>Nov. 20, 2026</small>
+* New **Engineering Analysis Report**. Use **Tools -> Generate Report** to build one document that collects the project information, materials, geometry, mesh, study settings, boundary conditions and result figures. The report is rendered as HTML and can be exported to PDF. A dedicated **Report** panel shows analysis warnings and notes.
+* Open results in **external post-processing tools**. New **Open Results in...** entries on the right-click context menu of *Solution* and *Result* objects (and on the post-processing toolbar) launch **ParaView**, **VisIt**, **Ovito** or **Gmsh** directly on the existing result files of the current study, such as *.frd, *.vtu, *.vtm, *.pvd* and *.vtk. Tool paths are managed on the new **Post-Processing** page of the Preferences dialog.
+* New **third-party software installer** inside WELSIM. **Tools -> Install third-party software...** downloads and configures helper applications (post-processing tools and optional solvers) without leaving the application.
+* **Check for Updates** upgraded: the dialog now compares the installed build against the latest public release (beta releases included) and can **download and launch the new installer directly** inside WELSIM.
+* New **Export Solver Scripts...** dialog: generate the input files of one or more solvers into a chosen folder without running the solve.
+* Crash protection: WELSIM now detects an application crash, saves a mini-dump file and shows a crash report dialog to help diagnose the problem.
+* Boundary, body and initial condition objects display refreshed **colored annotations**: a small annotation box with the condition name plus a colored 3D label. Each condition type has its own color, which is also used for the selection highlight.
+* Scripting and automation:
+    - A dockable **Python Console** panel is available in the main window, with import and export of Python scripts.
+    - A new automation engine exposes WELSIM functionality to scripts through a JSON RPC interface, and includes an **MCP (Model Context Protocol) server** so AI assistants can drive WELSIM.
+    - **WsmCli**, a command-line host, checks and diagnoses projects and licenses in batch mode without the GUI.
+* Localization framework: interface languages are defined by plain-text XML **language packs**, no programming needed to add one. **Simplified Chinese** and **Traditional Chinese** packs are included.
+* New mesh writers for the **OpenFOAM**, **Code_Aster**, **LS-DYNA** and **MAPDL (APDL)** formats (solver support under development).
+* Fixes:
+    - Reading binary or gzipped **UNV** files no longer crashes or hangs.
+    - Result contour colors are kept when the display is refreshed.
+    - The result legend (color bar) keeps its size when the graphics window is resized.
+    - Boundary condition annotation and highlight colors are restored for projects created by older versions.
+* Engineering: the GUI, the command-line host and the scripting layer now share one engine library; the regression system and the installer pipeline were reorganized; **MatEditor**, **CurveFitter**, **BeamSection** and **UnitConverter** now ship with their own installers and GitHub releases.
+
 
 ### 2026R1 (3.2) <small>Jan. at 2026</small>
 * Allow user to toggle off the display of application version in the top right corner of Graphics window.

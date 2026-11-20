@@ -63,8 +63,13 @@ You only need to download one installer file.
 ![finite_element_analysis_welsim_windows_install3](../../img/12_install_win/install_win_03.PNG "WELSIM Installation Folder.")
 6. The prerequesites libraries installation appears as shown in the figure below. Your system requires these libraries to run the WELSIM application. Click Yes.
 ![finite_element_analysis_welsim_windows_install4](../../img/12_install_win/install_win_04.PNG "WELSIM Prerequesites Installation.")
-7. The installation completed as shown in the figure below. Click Finish. 
+7. The installation completed as shown in the figure below. Click Finish. 
 ![finite_element_analysis_welsim_windows_install7](../../img/12_install_win/install_win_07.PNG "WELSIM Installation Completed.")
+
+### Keeping WELSIM up to date
+After WELSIM is installed, you do not need to visit the website for every new version. Open WELSIM and select **Help -> Check for Updates**. The application reports whether a newer release is available. Since 2026R3 (3.4), you can let WELSIM download the new installer and start the upgrade directly from the dialog; the existing installation is updated in place and your project files are not touched.
+
+The same mechanism installs third-party helper applications: **Tools -> Install third-party software...** downloads and configures external post-processing tools and optional solvers inside WELSIM.
 
 
 ## Activating the WELSIM

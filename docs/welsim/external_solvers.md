@@ -24,7 +24,7 @@ Details of each supported solver are provided in the table below. This table inc
 | LAMMPS | https://lammps.org | File | Yes | Yes | No |
 
 
-Due to restrictions of the GNU open-source license, *Elmer FEM*, *OpenRadioss*, *CalculiX*, and *LAMMPS* are not included in WELSIM's installer and require users to download them independently. You can configure these solvers through the Preferences in WELSIM.
+Due to restrictions of the GNU open-source license, *Elmer FEM*, *OpenRadioss*, *CalculiX*, and *LAMMPS* are not included in WELSIM's installer and require users to download them independently. You can configure these solvers through the Preferences in WELSIM. Alternatively, **Tools -> Install third-party software...** downloads and configures supported helper applications (external post-processing tools and some solvers) from within WELSIM automatically.
 
 
 
