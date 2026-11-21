@@ -21,6 +21,16 @@ To inspect the currently installed version, open the **About** dialog in WELSIM 
 
 ## Changelog
 
+### 2026R3 (3.4) <small>Nov. at 2026</small>
+* The WELSIM core now runs as a scriptable engine with one JSON API, reachable in three ways (see **Scripting and automation** in the user's guide):
+    - A new **Python Console** docking window (**View** -> **Windows** -> **Python Console**): a persistent terminal inside the application that creates documents and objects, runs any registered WELSIM command and reports the created `{id, name, type}`. Built-in helpers include `doc_new`, `doc_list`, `obj_add`, `cmd_run`, `cmd_list`, `cmd_find` and `api_describe`.
+    - `WsmCli.exe`, the command-line host of the same engine, for jobs without a graphics window (`--call`, `--serve`, `--diagnose`, `--selftest`, `--license`).
+    - A **Model Context Protocol (MCP)** server, so an AI agent (Claude, Hermes and other MCP clients) works on the WELSIM window that is open on your machine.
+* New **Scripting & AI (MCP)** component in the installer: the automation scripts, the embedded Python runtime, the scriptable engine `WelSimEngine.dll` and `WsmCli.exe`. No external Python installation is needed.
+* Post-processing support for *CalculiX* (`.frd` results) and *Elmer FEM* (`elmer_welsim.result` / `elmer_welsim.rst`); both solvers are now fully integrated, pre- and post-processing.
+* Enhancement and improvement.
+
+
 ### 2026R2 (3.3) <small>April at 2026</small>
 * Allow user to change the size of the toolbar icons. The options are Small (16px), Normal (24px), Large(36px), and Extra Large(48px).
 * Support multiple user interface styles including Classic, Dark, and Light. The Dark mode becomes the default theme.

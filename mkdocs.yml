@@ -172,6 +172,7 @@ nav:
       - Setting up boundary conditions: welsim/users/bcs.md
       - Using results: welsim/users/results.md
       - External solvers: welsim/external_solvers.md
+      - Scripting and automation: welsim/scripting.md
       - Objects reference: welsim/users/objects.md
 
   # - Meshing user's guide: 
