@@ -281,7 +281,7 @@ The VIEW menu includes the following actions:
 * **Views**: changes the viewpoint to the graphics display field. Includes sub-items: Isometric, Top, Right, Front.
 * **Graphics Window**: changes the mode of the graphics window. Includes sub-items: Docked, Undocked, and Full Screen.
 * **Toolbars**: determines to show the toolbars on the uesr interface. The available toolbars include File, Material, Geometry, FEM, Structural, Thermal, Electromagnetic, Tools, and Help. 
-* **Windows**: controls the display of the windows. The options that can be toggled are Project Explorer, Properties, Output, Tabular Data, and Chart windows.
+* **Windows**: controls the display of the windows. The options that can be toggled are Project Explorer, Properties, Output, Report, Python Console, Tabular Data, and Chart windows.
 * **Status Bar**: toggles the display of the status bar to the bottom of the main window.
 
 The items of the View menu is shown in Figure below.
@@ -421,10 +421,13 @@ The items of the Electromagnetic menu is shown in Figure below.
 ### Tools menu
 The TOOLS menu includes the following actions:
 
-* Export Input Script: generates solver input scripts to the designated directory.
+* Generate Report: creates a complete engineering analysis report of the current project, including materials, geometry, mesh, study settings, boundary conditions and result figures. See [Generating analysis reports](results.md#generating-analysis-reports).
+* Export Solver Scripts...: generates the solver input files of the selected solvers into a designated directory without running the solve.
+* Read Result Files...: imports external result files into the current project.
 * Reveal Files in Explorer: opens the local directory that contains project files.
+* Install third-party software...: downloads and installs helper applications such as external post-processing tools. See [Installing third-party software](results.md#installing-third-party-software).
 
-The items of the Tools menu is shown in Figure below.
+The items of the Tools menu is shown in Figure below.
 
 ![finite_element_analysis_welsim_menu_tools](../../img/3_guide/ch3_guide_menu_tools.png "Items in the Tools Menu.")
 
@@ -435,6 +438,7 @@ The HELP menu includes the following actions:
 * Documentation: opens the default internet web browser, and visits [online documentation](http://docs.welsim.com).
 * Website:  opens the default internet web browser, and visits [official website](https://welsim.com).
 * License Manager: opens WELSIM license manager interface. You can activate the application with the license key or update the license here. 
+* Check for Updates: checks whether a newer version of WELSIM is available. Since 2026R3 (3.4) the dialog can also download the new installer and start the upgrade inside the application.
 * About: provides copyright and application version information.
 
 The items of the Help menu is shown in Figure below.

@@ -49,4 +49,4 @@ If you are interested in our other free engineering software:
 [12]: welsim/scripting.md
 
 
-<small>Last Updated: Nov. 4th, 2026</small>
+<small>Last Updated: Nov. 20th, 2026</small>

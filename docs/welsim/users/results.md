@@ -435,4 +435,19 @@ The data associated with result objects can be exported in ASCII (.txt or .dat) 
 !!! note
     The desired result object must have been successfully evaluated before exporting the result data.
 
+### Opening results in external post-processing tools
+Besides the built-in post-processing, WELSIM can hand the results over to dedicated external post-processing tools: **ParaView**, **VisIt**, **Ovito**.
+
+Right-click on a *Solution* or *Result* object and choose **Open Results in...**, then pick the tool. WELSIM locates the existing result files of the current study (for example *.frd, *.vtu, *.vtm, *.vts, *.vtp, *.pvd, *.vtk*) inside the solver folder and opens them directly in the selected application. The same tools are also available on the post-processing toolbar.
+
+The executable path of each tool is configured on the **Post-Processing** page of the **Edit -> Preferences** dialog. If a tool is not installed on the computer yet, WELSIM can download and install it for you; see [Install third-party software](#installing-third-party-software).
+
+### Generating analysis reports
+Use **Tools -> Generate Report** to create a complete engineering analysis report of the current project. WELSIM collects the project information, materials, geometry, mesh statistics, study settings, boundary conditions and the figures of the generated results into a single report, which is displayed in a dedicated panel. The report can be saved as an HTML file and exported to PDF.
+
+A separate **Report** panel lists the warnings and notes produced during meshing and evaluation, which helps to review the analysis before reporting it.
+
+### Installing third-party software
+**Tools -> Install third-party software...** downloads and sets up helper applications used by WELSIM, such as the external post-processing tools and optional solvers. WELSIM fetches the installer or archive from the project's official release page, unpacks it and configures the path automatically, so no manual browsing or path editing is needed.
+
 
