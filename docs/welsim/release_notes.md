@@ -21,26 +21,27 @@ To inspect the currently installed version, open the **About** dialog in WELSIM 
 
 ## Changelog
 
-### 2026R3 (3.4) <small>Nov. 20, 2026</small>
+### 2026R3 (3.4) <small>Nov. at 2026</small>
+* The WELSIM core now runs as a scriptable engine with one JSON API, reachable in three ways (see **Scripting and automation** in the user's guide):
+    - A dockable **Python Console** docking window (**View** -> **Windows** -> **Python Console**): a persistent terminal inside the application that creates documents and objects, runs any registered WELSIM command and reports the created `{id, name, type}`. Built-in helpers include `doc_new`, `doc_list`, `obj_add`, `cmd_run`, `cmd_list`, `cmd_find` and `api_describe`.
+    - `WsmCli.exe`, the command-line host of the same engine, for jobs without a graphics window (`--call`, `--serve`, `--diagnose`, `--selftest`, `--license`).
+    - A **Model Context Protocol (MCP)** server, so an AI agent (Claude, Hermes and other MCP clients) works on the WELSIM window that is open on your machine.
+* New **Scripting & AI (MCP)** component in the installer: the automation scripts, the embedded Python runtime, the scriptable engine `WelSimEngine.dll` and `WsmCli.exe`. No external Python installation is needed.
+* Post-processing support for *CalculiX* (`.frd` results) and *Elmer FEM* (`elmer_welsim.result` / `elmer_welsim.rst`); both solvers are now fully integrated, pre- and post-processing.
 * New **Engineering Analysis Report**. Use **Tools -> Generate Report** to build one document that collects the project information, materials, geometry, mesh, study settings, boundary conditions and result figures. The report is rendered as HTML and can be exported to PDF. A dedicated **Report** panel shows analysis warnings and notes.
 * Open results in **external post-processing tools**. New **Open Results in...** entries on the right-click context menu of *Solution* and *Result* objects (and on the post-processing toolbar) launch **ParaView**, **VisIt**, **Ovito** or **Gmsh** directly on the existing result files of the current study, such as *.frd, *.vtu, *.vtm, *.pvd* and *.vtk. Tool paths are managed on the new **Post-Processing** page of the Preferences dialog.
 * New **third-party software installer** inside WELSIM. **Tools -> Install third-party software...** downloads and configures helper applications (post-processing tools and optional solvers) without leaving the application.
-* **Check for Updates** upgraded: the dialog now compares the installed build against the latest public release (beta releases included) and can **download and launch the new installer directly** inside WELSIM.
 * New **Export Solver Scripts...** dialog: generate the input files of one or more solvers into a chosen folder without running the solve.
-* Crash protection: WELSIM now detects an application crash, saves a mini-dump file and shows a crash report dialog to help diagnose the problem.
-* Boundary, body and initial condition objects display refreshed **colored annotations**: a small annotation box with the condition name plus a colored 3D label. Each condition type has its own color, which is also used for the selection highlight.
-* Scripting and automation:
-    - A dockable **Python Console** panel is available in the main window, with import and export of Python scripts.
-    - A new automation engine exposes WELSIM functionality to scripts through a JSON RPC interface, and includes an **MCP (Model Context Protocol) server** so AI assistants can drive WELSIM.
-    - **WsmCli**, a command-line host, checks and diagnoses projects and licenses in batch mode without the GUI.
-* Localization framework: interface languages are defined by plain-text XML **language packs**, no programming needed to add one. **Simplified Chinese** and **Traditional Chinese** packs are included.
 * New mesh writers for the **OpenFOAM**, **Code_Aster**, **LS-DYNA** and **MAPDL (APDL)** formats (solver support under development).
-* Fixes:
-    - Reading binary or gzipped **UNV** files no longer crashes or hangs.
-    - Result contour colors are kept when the display is refreshed.
-    - The result legend (color bar) keeps its size when the graphics window is resized.
-    - Boundary condition annotation and highlight colors are restored for projects created by older versions.
-* Engineering: the GUI, the command-line host and the scripting layer now share one engine library; the regression system and the installer pipeline were reorganized; **MatEditor**, **CurveFitter**, **BeamSection** and **UnitConverter** now ship with their own installers and GitHub releases.
+
+
+### 2026R2 (3.3) <small>April at 2026</small>
+* Allow user to change the size of the toolbar icons. The options are Small (16px), Normal (24px), Large(36px), and Extra Large(48px).
+* Support multiple user interface styles including Classic, Dark, and Light. The Dark mode becomes the default theme.
+* Upgrade VC++ and GNU C++ compilers to the c++17 standard.
+* Upgrade Qt from 5.15.2 to 6.10.2
+* Upgrade VTK from 8.2 to 9.4, ITK from 5.2 to 5.4
+* Enhancement and improvement.
 
 
 ### 2026R1 (3.2) <small>Jan. at 2026</small>

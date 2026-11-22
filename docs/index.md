@@ -11,7 +11,8 @@ WELSIM was born from a vision to create a general-purpose simulation tool that e
 * [x] Zero wait. [Download][1] and use WELSIM immediately.
 * [x] We do not collect data. WELSIM is secure and runs without internet.
 * [x] The user-friendly graphical interface has no learning curve.
-* [x] We support renowned open source solvers, including [CalculiX](https://calculix.de), [Elmer FEM](https://elmerfem.org), [FrontISTR](https://frontistr.com), [LAMMPS](https://lammps.org), [MFEM](https://mfem.org), [OpenRadioss](https://openradioss.org), [Palace](https://awslabs.github.io/palace), and [SU2](https://su2code.github.io).
+* [x] We support renowned open source solvers, including [CalculiX](https://calculix.de), [Elmer FEM](https://elmerfem.org), [FrontISTR](https://frontistr.com), [LAMMPS](https://lammps.org), [MFEM](https://mfem.org), [OpenFOAM](https://openfoam.org), [OpenRadioss(OpenCourant)](https://opencourant.org), [Palace](https://awslabs.github.io/palace), and [SU2](https://su2code.github.io).
+* [x] WELSIM is scriptable: a Python console inside the application, a command-line engine host, and an MCP server so an AI agent can build and run your models. See [Scripting and automation][12].
 * [x] Friendly [pricing][2] options. Free trial. No hidden fees. No commitments.
 
 
@@ -45,6 +46,7 @@ If you are interested in our other free engineering software:
 [9]: mateditor/mateditor_overview.md
 [10]: curvefitter/curvefit_overview.md
 [11]: beamsection/beamsection_overview.md
+[12]: welsim/scripting.md
 
 
 <small>Last Updated: Nov. 20th, 2026</small>
