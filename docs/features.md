@@ -11,9 +11,9 @@ As a general-purpose engineering simulation software, WELSIM contains features t
 | Supported automatic mesh | Tet10, Tet4, Tri6, Tri3 |
 
 * [x] Project data: file with suffix "wsdb" and the associated folder (same file name).
-* [x] Supported mesh export formats: UNV, GMSH, MFEM, SU2, VTK (VTK, PVTU and VTU-XML), plus the per-solver mesh formats (FrontISTR AVS, OpenRadioss include, Ansys APDL, OpenFOAM polyMesh, CGNS).
+* [x] Supported mesh export formats: UNV, GMSH, MFEM, SU2, VTK (VTK, PVTU and VTU-XML), plus the per-solver mesh formats (FrontISTR AVS, OpenRadioss include, APDL, OpenFOAM polyMesh, CGNS).
 * [x] Supported result export formats: VTK (including parallel PVTU/VTU series), ParaView `.pvd`, VisIt `.visit`, Tecplot, Plain Text.
-* [x] Supported solver scripts: [CalculiX](https://calculix.de), [Elmer FEM](https://elmerfem.org), [FrontISTR](https://frontistr.com), [LAMMPS](https://lammps.org), [MFEM](https://mfem.org), [OpenFOAM](https://openfoam.org), [OpenRadioss(OpenCourant)](https://opencourant.org), [Palace](https://awslabs.github.io/palace), and [SU2](https://su2code.github.io); an input deck for [Ansys APDL](https://www.ansys.com) is exported as well.
+* [x] Supported solver scripts: [CalculiX](https://calculix.de), [Elmer FEM](https://elmerfem.org), [FrontISTR](https://frontistr.com), [LAMMPS](https://lammps.org), [MFEM](https://mfem.org), [OpenFOAM](https://openfoam.org), [OpenRadioss(OpenCourant)](https://opencourant.org), [Palace](https://awslabs.github.io/palace), and [SU2](https://su2code.github.io).
 * [x] Scripting and automation: an in-application Python console, the `WsmCli` command-line engine host, and an MCP server that lets an AI agent drive the open WELSIM window.
 
 
@@ -92,6 +92,20 @@ As a general-purpose engineering simulation software, WELSIM contains features t
 * [x] Parallel computing.
 * [ ] Multi-body analysis.
 * [ ] Nonlinear materials.
+
+
+## Electromagnetic (Elmer FEM)
+
+| Electromagnetic analysis | Description |
+| ------------------------ | ----------- |
+| Types | Electrostatic, direct current, magnetostatic and transient magneto-dynamics (Whitney edge elements), harmonic magneto-dynamics, vector Helmholtz, Fourier loss, lumped circuits coupled to magneto-dynamics |
+| Materials | Linear: relative permeability (isotropic or three diagonal components), electric conductivity, relative permittivity |
+| Boundary conditions | EM ground, voltage, magnetic vector potential |
+| Body loads | Magnetization, current density |
+| Results | Nodal fields from Elmer's ASCII result file; saved scalars and saved line data as curves |
+
+* [x] Coupled studies by stacking equations (for example magneto-dynamics with the heat equation) through the **Additional Solver** object.
+* [ ] Nonlinear materials (B-H curve).
 
 
 ## Molecular Dynamics (LAMMPS)

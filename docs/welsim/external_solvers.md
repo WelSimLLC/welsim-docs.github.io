@@ -1,6 +1,6 @@
 # External solvers
 
-WELSIM is a simulation software that supports multiple solvers and is one of the most comprehensive and widely compatible pre- and post-processing tools for open-source solvers in the world. Currently supported open-source solvers include *FrontISTR*, *Elmer FEM*, *OpenRadioss*, *CalculiX*, *SU2*, *Palace*, *LAMMPS*, *MFEM* and *OpenFOAM*; input for the commercial *Ansys APDL* solver can also be produced. Some solvers are run directly from a WELSIM study, others are supported by exporting a ready-to-run case from the **Tools** menu, as described further down this page. Each of these solvers offers distinct features and advantages, allowing users to choose the one that best suits their needs. Thanks to WELSIM’s powerful pre- and post-processing capabilities, the time required for modeling when using these solvers is significantly reduced.
+WELSIM is a simulation software that supports multiple solvers and is one of the most comprehensive and widely compatible pre- and post-processing tools for open-source solvers in the world. Currently supported open-source solvers include *FrontISTR*, *Elmer FEM*, *OpenRadioss*, *CalculiX*, *SU2*, *Palace*, *LAMMPS*, *MFEM* and *OpenFOAM*; Some solvers are run directly from a WELSIM study, others are supported by exporting a ready-to-run case from the **Tools** menu, as described further down this page. Each of these solvers offers distinct features and advantages, allowing users to choose the one that best suits their needs. Thanks to WELSIM’s powerful pre- and post-processing capabilities, the time required for modeling when using these solvers is significantly reduced.
 
 This section primarily introduces the details and usage methods of external solvers.
 
@@ -29,6 +29,38 @@ Due to restrictions of the GNU open-source license, *Elmer FEM*, *OpenRadioss*, 
 *CalculiX* results are read from the `.frd` file of the run, and *Elmer FEM* results from the `elmer_welsim.result` (or `elmer_welsim.rst`) file written next to the case; both appear in the WELSIM result tree like any other study.
 
 
+## Elmer FEM
+
+*Elmer FEM* is a general multiphysics solver. WELSIM writes the case as the deck `elmer_welsim.sif` with the Elmer mesh next to it, starts `ElmerSolver` when the study is solved, and reads the results back, so an Elmer analysis follows the same workflow as a built-in study. Elmer is not redistributed with WELSIM because of its GNU license: install it from [elmerfem.org](https://elmerfem.org) and give WELSIM the installation folder in the preferences, like the other path-connected solvers. WELSIM then sets the runtime environment (`ELMER_HOME`, `ELMER_LIB`, `PATH`) for the run on its own.
+
+### Analysis types
+
+Select *Elmer FEM* in **Study Settings** and pick an equation from the Elmer equation list; more equations can be added to the same study with the **Additional Solver** object, which offers the same list.
+
+| Field | Equations |
+| --- | --- |
+| Heat transfer | Heat Equation, Poisson BEM |
+| Structure | Stress Analysis |
+| Electric | Static Electrical Solver, Static Current Solver, Coil Solver |
+| Magneto-dynamics | MagnetoDynamics (subtypes: Whitney AV Solver, Whitney AV Harmonic Solver, MagnetoDynamics Calculated Fields), Vector Helmholtz, Fourier Loss, Circuits And Dynamics |
+| Flow helpers | Stream Solver, Fluidic Force, Free Surface Reduced |
+| Data equations | Save Scalars, Save Line, Mesh Update |
+
+For the magneto-dynamics equations the model is built in terms of the magnetic vector potential **AV**. WELSIM writes:
+
+* Boundary conditions: *EM Ground*, *Voltage*, and *Magnetic Potential* — on magneto-dynamics boundaries the prescribed value is applied to the vector potential components.
+* Body loads: *Magnetization* and *Current Density* as Elmer body forces on the target bodies.
+* Elements: the magneto-dynamics equations use Elmer's Whitney edge elements through the solver subtypes above.
+
+### Materials
+
+The following WELSIM material properties are written into the Elmer deck: Density, Mass, Constant Damping Coefficient, Isotropic Thermal Expansion (also the instantaneous variant), Local Coordinates, Isotropic Elasticity, Dynamic Viscosity, Enthalpy, Isotropic Thermal Conductivity, Specific Heat, Isotropic Electrical Conductivity (`Electric Conductivity`), Isotropic Relative Permittivity, and Relative Permeability. Relative permeability can be isotropic (a single value) or orthotropic, which is written as the three diagonal components `Relative Permeability(3) = x y z`.
+
+### Results
+
+After the run WELSIM imports `elmer_welsim.result` (or `elmer_welsim.rst`) into the result tree: nodal quantities such as temperature, displacement, stress, strain, velocity and pressure display like any other study. Quantities saved by a **Save Scalars** equation (`scalars.dat` with its `scalars.dat.names` sidecar) are imported as curves of time or iteration.
+
+
 ## Script export
 
 Some solvers are supported by export rather than by a study solver entry: the case is written from the **Tools** menu and is then started by the user, on their own machine or on [WELSIM Cloud <i class="fa fa-external-link"></i>](https://cloud.welsim.com). Each command writes into the study folder (`<project folder>\<study name>`) and rewrites the whole set of files on every run, so files that you edit by hand should be saved as copies.
@@ -38,20 +70,12 @@ Some solvers are supported by export rather than by a study solver entry: the ca
 | Export CalculiX script | CalculiX | `calculix_welsim.inp` |
 | Export Elmer script | Elmer FEM | `elmer_welsim.sif` plus the Elmer mesh in the case folder |
 | Export FrontISTR script | FrontISTR | `fstr_welsim.cnt` and `fstr_welsim.avs` |
-| Export Ansys APDL script | Ansys Mechanical APDL | `apdl_welsim.dat` (input deck) and `apdlmesh_welsim.dat` (nodes, elements, materials) |
 | Export OpenRadioss script | OpenRadioss | `radioss_welsim_0000.rad`, `radioss_welsim_0001.rad` and the mesh include `radioss_welsim.inc` |
 | Export SU2 script | SU2 | `su2_welsim.cfg` and `mesh_welsim.su2` |
 | Export OpenFOAM script | OpenFOAM | the case folder `welsim_openfoam_case`, with the mesh in `constant/polyMesh` (blockMesh, boundary surfaces and sets) |
 | Export MFEM script | MFEM | `mfem_welsim.mmesh` |
 | Export Palace script | Palace | `palace_welsim.json` |
 | Export LAMMPS script | LAMMPS | `lammps_welsim.in` |
-
-The Ansys APDL export maps the WELSIM model onto APDL as follows:
-
-* Element types follow the order and dimension of the WELSIM mesh: 3-D solid SOLID185/SOLID186, shell SHELL181/SHELL281, spar and pipe LINK180/PIPE188, and so on.
-* Element real constants, such as shell thickness, and section data are written with the mesh.
-* Material tables cover the linear elastic, hyperelastic (Mooney-Rivlin, Neo-Hookean, Ogden, Blatz-Kreiss, …), plasticity and creep laws of the WELSIM material object.
-* Loads follow the WELSIM solver mapping: concentrated forces, pressures and accelerations are exported as component loads on nodes and elements, and a prescribed rotation is converted into equivalent displacements applied on a reference node coupled to the constrained nodes.
 
 
 ## Default solver
