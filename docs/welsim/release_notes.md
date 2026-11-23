@@ -7,7 +7,7 @@ To upgrade WELSIM to the latest version, download the installer from our [offici
 <br/>
 ​
 
-Since 2022R2(version 2.1), WelSim provides a version checker in the application, users can click **Help** -> **Check for Updates** on the menu and know if a new version is available. 
+Since 2022R2(version 2.1), WelSim provides a version checker in the application, users can click **Help** -> **Check for Updates** on the menu and know if a new version is available. Since 2026R3 (3.4), the same dialog can also download the new installer and start the upgrade inside the application. 
 
 ![finite_element_analysis_welsim_check_updates](../img/19/finite_element_analysis_welsim_check_updates2.png "Check updates.")
 
@@ -23,12 +23,16 @@ To inspect the currently installed version, open the **About** dialog in WELSIM 
 
 ### 2026R3 (3.4) <small>Nov. at 2026</small>
 * The WELSIM core now runs as a scriptable engine with one JSON API, reachable in three ways (see **Scripting and automation** in the user's guide):
-    - A new **Python Console** docking window (**View** -> **Windows** -> **Python Console**): a persistent terminal inside the application that creates documents and objects, runs any registered WELSIM command and reports the created `{id, name, type}`. Built-in helpers include `doc_new`, `doc_list`, `obj_add`, `cmd_run`, `cmd_list`, `cmd_find` and `api_describe`.
+    - A dockable **Python Console** docking window (**View** -> **Windows** -> **Python Console**): a persistent terminal inside the application that creates documents and objects, runs any registered WELSIM command and reports the created `{id, name, type}`. Built-in helpers include `doc_new`, `doc_list`, `obj_add`, `cmd_run`, `cmd_list`, `cmd_find` and `api_describe`.
     - `WsmCli.exe`, the command-line host of the same engine, for jobs without a graphics window (`--call`, `--serve`, `--diagnose`, `--selftest`, `--license`).
     - A **Model Context Protocol (MCP)** server, so an AI agent (Claude, Hermes and other MCP clients) works on the WELSIM window that is open on your machine.
 * New **Scripting & AI (MCP)** component in the installer: the automation scripts, the embedded Python runtime, the scriptable engine `WelSimEngine.dll` and `WsmCli.exe`. No external Python installation is needed.
 * Post-processing support for *CalculiX* (`.frd` results) and *Elmer FEM* (`elmer_welsim.result` / `elmer_welsim.rst`); both solvers are now fully integrated, pre- and post-processing.
-* Enhancement and improvement.
+* New **Engineering Analysis Report**. Use **Tools -> Generate Report** to build one document that collects the project information, materials, geometry, mesh, study settings, boundary conditions and result figures. The report is rendered as HTML and can be exported to PDF. A dedicated **Report** panel shows analysis warnings and notes.
+* Open results in **external post-processing tools**. New **Open Results in...** entries on the right-click context menu of *Solution* and *Result* objects (and on the post-processing toolbar) launch **ParaView**, **VisIt**, **Ovito** or **Gmsh** directly on the existing result files of the current study, such as *.frd, *.vtu, *.vtm, *.pvd* and *.vtk. Tool paths are managed on the new **Post-Processing** page of the Preferences dialog.
+* New **third-party software installer** inside WELSIM. **Tools -> Install third-party software...** downloads and configures helper applications (post-processing tools and optional solvers) without leaving the application.
+* New **Export Solver Scripts...** dialog: generate the input files of one or more solvers into a chosen folder without running the solve.
+* New mesh writers for the **OpenFOAM**, **Code_Aster**, **LS-DYNA** and **MAPDL (APDL)** formats (solver support under development).
 
 
 ### 2026R2 (3.3) <small>April at 2026</small>
