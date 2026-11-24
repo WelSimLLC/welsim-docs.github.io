@@ -11,10 +11,10 @@ As a general-purpose engineering simulation software, WELSIM contains features t
 | Supported automatic mesh | Tet10, Tet4, Tri6, Tri3 |
 
 * [x] Project data: file with suffix "wsdb" and the associated folder (same file name).
-* [x] Supported mesh export formats: UNV, MFEM, SU2, VTK.
-* [x] Supported result export formats: VTK, Tecplot, Plain Text.
-* [x] Open results in external post-processing tools: ParaView, VisIt, Ovito, and Gmsh.
-* [x] Supported solver scripts: [CalculiX](https://calculix.de), [Elmer FEM](https://elmerfem.org), [FrontISTR](https://frontistr.com), [LAMMPS](https://lammps.org), [MFEM](https://mfem.org), [OpenRadioss](https://openradioss.org), [Palace](https://awslabs.github.io/palace), and [SU2](https://su2code.github.io).
+* [x] Supported mesh export formats: UNV, GMSH, MFEM, SU2, VTK (VTK, PVTU and VTU-XML), plus the per-solver mesh formats (FrontISTR AVS, OpenRadioss include, Ansys APDL, OpenFOAM polyMesh, CGNS).
+* [x] Supported result export formats: VTK (including parallel PVTU/VTU series), ParaView `.pvd`, VisIt `.visit`, Tecplot, Plain Text.
+* [x] Supported solver scripts: [CalculiX](https://calculix.de), [Elmer FEM](https://elmerfem.org), [FrontISTR](https://frontistr.com), [LAMMPS](https://lammps.org), [MFEM](https://mfem.org), [OpenFOAM](https://openfoam.org), [OpenRadioss(OpenCourant)](https://opencourant.org), [Palace](https://awslabs.github.io/palace), and [SU2](https://su2code.github.io); an input deck for [Ansys APDL](https://www.ansys.com) is exported as well.
+* [x] Scripting and automation: an in-application Python console, the `WsmCli` command-line engine host, and an MCP server that lets an AI agent drive the open WELSIM window.
 
 
 ## Structural (FrontISTR & CalculiX)

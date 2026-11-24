@@ -10,7 +10,6 @@ At present, MatEditor supports eight types of unit systems commonly used in engi
 * Metric g-cm-s
 * Metrickg-mm-s
 * Metric tonne-mm-s
-* Metric decatonne-mm-s
 * Metric kg-um-s
 * US Customary lbm-ft-s
 * US Customary lbm-in-s
