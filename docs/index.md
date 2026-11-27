@@ -42,7 +42,7 @@ If you are interested in our other free engineering software:
 [5]: welsim/install/linux.md
 [6]: welsim/users/overview.md
 [7]: welsim/theory/introduction.md
-[8]: unitconverter/unitconverter.md
+[8]: welsim/users/unitconverter.md
 [9]: mateditor/mateditor_overview.md
 [10]: curvefitter/curvefit_overview.md
 [11]: beamsection/beamsection_overview.md

@@ -1,8 +1,9 @@
-# UnitConverter
-UnitConverter is a free unit conversion software program for engineers. This tool allows you to convert a large number of engineering units quickly and accurately.
+# Unit Converter
+Unit Converter is a unit conversion tool built into WELSIM. It allows you to convert a large number of engineering units quickly and accurately.
 
+Open it from the **Tools** menu (**Tools → Unit Converter...**) or from the Unit Converter toolbar button. The dialog keeps the same user interface as the stand-alone UnitConverter program.
 
-![finite_element_analysis_unitconveter_gui](../img/uc/unitconverter_pressure.png "UnitConverter user interface")
+![finite_element_analysis_unitconveter_gui](../../img/uc/unitconverter_pressure.png "Unit Converter user interface")
 
 ## Specification
 
@@ -47,6 +48,6 @@ The supported units are listed in the table below.
 
 
 ## Download
-UnitConverter software is available at our [official website](https://welsim.com/download).
+Unit Converter is included in WELSIM, available at our [official website](https://welsim.com/download).
 
 

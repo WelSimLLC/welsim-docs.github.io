@@ -2,7 +2,7 @@
 site_name: WelSim Documentation
 site_author: WelSimulation LLC
 site_url: http://docs.welsim.com
-site_description: WELSIM, MatEditor, CurveFitter, BeamSection and UnitConverter online user manual
+site_description: WELSIM, MatEditor, CurveFitter and BeamSection online user manual
 site_dir: site
 
 
@@ -164,6 +164,8 @@ nav:
     - WELSIM user's guide:
       - Overview: welsim/users/overview.md
       - Application user interface: welsim/users/gui.md
+      - Preferences: welsim/users/preferences.md
+      - Unit Converter: welsim/users/unitconverter.md
       - Steps for using the application: welsim/users/steps.md
       - Physics and analysis types: welsim/users/analysistypes.md
       - Specifying geometry: welsim/users/geometry.md
@@ -237,10 +239,6 @@ nav:
     - Getting Started: curvefitter/curvefit_getstart.md
     - Theory: curvefitter/curvefit_theory.md
     - I/O File Format: curvefitter/curvefit_io.md
-
-
-  - UnitConverter:
-    - Overview: unitconverter/unitconverter.md
 
 
   - BeamSection:
